@@ -2,7 +2,7 @@ body {
     background-color: rgb(102, 130, 255);
 }
 
-text {
+.text {
     background-color:white;
     font-family:Arial, Helvetica, sans-serif;
 }
