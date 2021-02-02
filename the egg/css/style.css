@@ -8,3 +8,7 @@ body {
     margin-left:570px;
     margin-top:250px;
 }
+
+#egg:hover{
+    opacity:60%;
+}
