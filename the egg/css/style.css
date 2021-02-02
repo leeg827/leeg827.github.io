@@ -10,5 +10,6 @@ body {
 }
 
 #egg:hover{
-    opacity:60%;
+    opacity:80%;
+    transition: ease-in-out .5s;
 }
