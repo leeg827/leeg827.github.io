@@ -1,5 +1,16 @@
 body {
     background-color: rgb(102, 130, 255);
+    animation-name: color_change;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+    animation-direction: alternate;
+    margin:50;
+}
+
+@keyframes color_change {
+    0% { background-color: rgb(45, 45, 129); }
+    50% {background-color:rgb(133, 102, 255)}
+	100% { background-color: rgb(102, 130, 255) }
 }
 
 .text {
@@ -14,4 +25,11 @@ ul {
 
 a {
     text-decoration:none;
+}
+
+iframe {
+    margin-top:20px;
+    border:none;
+    width:250px;
+    height:250px;
 }
