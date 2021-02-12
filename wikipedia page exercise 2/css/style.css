@@ -1,0 +1,95 @@
+
+ @font-face {    
+    font-family: 'autopia-bold';
+    src: url(../karrik/autopia-bold-webfont.woff) format('woff'),
+         url(../karrik/autopia-bold-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {    
+    font-family: 'autopia-italic';
+    src: url(../karrik/autopia-italic-webfont.woff) format('woff'),
+         url(../karrik/autopia-italic-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {    
+    font-family: 'autopia-regular';
+    src: url(../karrik/autopia-regular-webfont.woff) format('woff'),
+         url(../karrik/autopia-regular-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {    
+    font-family: 'autopia-bold-italic';
+    src: url(../karrik/autopia-bold-italic-webfont.woff) format('woff'),
+         url(../karrik/autopia-bold-italic-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+body {
+    background-color:rgb(255, 255, 255);
+    margin:0px;
+}
+
+.header {
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    font-family:'autopia-bold-italic',sans-serif;
+    color:rgb(0, 0, 0);
+    margin-left:5vw;
+ }
+
+ h1 {
+     font-size: 70px;
+     margin-top:50px;
+     margin-bottom:30px;
+    }
+
+h2 {
+    font-size:50px;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+h3 {
+    font-size:30px;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+.text {
+    font-size:30px;
+    font-family:'autopia-regular',sans-serif;
+    line-height: 1.3;
+    letter-spacing:.3;
+    width:90vw;
+    margin-left: 4vw;
+}
+
+img {
+    margin-left:4vw;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+.long {
+    width: 500px;
+    height:300px;
+    margin-bottom:30px;
+}
+
+.poster {
+    width:300px;
+    height:400px;
+    text-align:left;
+    margin-bottom:50px;
+}
+
+#opera {
+    margin-bottom:50px;
+}
