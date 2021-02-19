@@ -94,7 +94,7 @@ body {
 }
 
 #title {
-    font-size:13vh;
+    font-size:8vw;
     font-family:helvetica;
     color:white;
 }
@@ -113,4 +113,66 @@ body {
     font-size:5vh;
     text-align:right;
     color:white;
+}
+
+/* Tablet */ 
+@media (max-width:1024px) {
+    
+    .grid-item:nth-child(4) {
+        grid-row-start: 4;
+        grid-column-end: 6;
+        animation: blur 6s alternate infinite 1s;
+    }
+
+    .grid-item:nth-child(5) {
+        grid-row-start: 3;
+        grid-column-end: 5;
+        z-index:2;
+        animation: blur 4s alternate infinite 1s;
+    }
+    
+    #street {
+        width:20vw;
+        height:40vh;
+    }
+
+    #neighborhood {
+        width: 35vw;
+        height:40vh;
+    }
+
+
+}
+
+/* Mobile */ 
+@media (max-width:768px) {
+
+    .grid-item:nth-child(4) {
+        grid-row-start: 4;
+        grid-column-end: 6;
+        animation: blur 6s alternate infinite 1s;
+    }
+
+    .grid-item:nth-child(5) {
+        grid-row-start: 3;
+        grid-column-start: 5;
+        z-index:2;
+        animation: blur 4s alternate infinite 1s;
+    }
+
+    #street {
+        width:30vw;
+        height:35vh;
+    }
+
+    #neighborhood {
+        width: 35vw;
+        height:40vh;
+    }
+
+    #blurr {
+        width:30vw;
+        height:35vh;
+    }
+
 }
