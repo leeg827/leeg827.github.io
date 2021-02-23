@@ -81,6 +81,8 @@ li {
     width:400px;
     height:200px;
     border: 5px solid rgb(244, 57, 57);
+    animation: grow 20s 1;
+    animation-play-state:paused;
     margin-top:50px;
     margin-left:70px;
 }
@@ -99,6 +101,10 @@ p {
     font-size:1em;
     margin: 20px auto;
     color:rgb(255, 255, 255);
+}
+
+#station {
+    margin-top:1750px;
 }
 
 @keyframes grow{
