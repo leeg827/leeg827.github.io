@@ -1,0 +1,65 @@
+
+  body {
+      background-color:black;
+      display:inline-block;
+      margin:0px;
+  }
+  @font-face {    
+    font-family: 'fraktion_regular';
+    src: url(../fraktionmono/fraktionmono-regular-webfont.woff) format('woff'),
+         url(../fraktionmono/fraktionmono-regular-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {    
+    font-family: 'fraktion_italic';
+    src: url(../fraktionmono/fraktionmono-italic-webfont.woff) format('woff'),
+         url(../fraktionmono/fraktionmono-italic-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  @font-face {    
+    font-family: 'fraktion_bold';
+    src: url(../fraktionmono/fraktionmono-bold-webfont.woff) format('woff'),
+         url(../fraktionmono/fraktionmono-bold-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {    
+    font-family: 'fraktion_bold_italic';
+    src: url(../fraktionmono/fraktionmono-bolditalic-webfont.woff) format('woff'),
+         url(../fraktionmono/fraktionmono-bolditalic-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+p {
+    width:480px;
+    font-family:'fraktion_regular',sans-serif;
+    font-size:2em;
+    margin: 20px auto;
+    color:rgb(255, 255, 255);
+}
+
+#first {
+    width:500px;
+    height:2000px;
+    padding:4vh;
+    margin: 4vh auto;
+    background: linear-gradient(180deg, #FF5F5F 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+#second {
+    margin-top:700px;
+}
+
+.red {
+    color:rgb(236, 67, 67);
+}
+
+

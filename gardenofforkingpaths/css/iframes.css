@@ -1,0 +1,111 @@
+@font-face {    
+    font-family: 'fraktion_regular';
+    src: url(../fraktionmono/fraktionmono-regular-webfont.woff) format('woff'),
+         url(../fraktionmono/fraktionmono-regular-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {    
+    font-family: 'fraktion_italic';
+    src: url(../fraktionmono/fraktionmono-italic-webfont.woff) format('woff'),
+         url(../fraktionmono/fraktionmono-italic-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
+  @font-face {    
+    font-family: 'fraktion_bold';
+    src: url(../fraktionmono/fraktionmono-bold-webfont.woff) format('woff'),
+         url(../fraktionmono/fraktionmono-bold-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {    
+    font-family: 'fraktion_bold_italic';
+    src: url(../fraktionmono/fraktionmono-bolditalic-webfont.woff) format('woff'),
+         url(../fraktionmono/fraktionmono-bolditalic-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+body {
+    background-color:black;
+}
+
+
+#door {
+    width:520px;
+    height:70vh;
+    overflow-x:hidden;
+    margin-left:450px;
+    margin-top:100px;
+}
+
+.container {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    margin-top:200px;
+}
+
+.pocket {
+    width:300px;
+    height:400px;
+}
+
+#paragraph {
+    margin-top:200px;
+    width:700px;
+    height:300px;
+}
+
+ul {
+    list-style:none;
+    margin-top:40px;
+}
+
+.stairs {
+    width:413px;
+    height:104px;
+    background: linear-gradient(180deg, #FF5555 0%, rgba(196, 196, 196, 0) 100%);
+}
+
+li {
+    margin:30px;
+}
+
+#growing {
+    width:400px;
+    height:200px;
+    border: 5px solid rgb(244, 57, 57);
+    margin-top:50px;
+    margin-left:70px;
+}
+
+#growing:hover {
+    width:400px;
+    animation: grow 20s 1;
+    border: 5px solid rgb(244, 57, 57);
+    margin-top:50px;
+    margin-left:70px;
+}
+
+p {
+    width:380px;
+    font-family:'fraktion_regular',sans-serif;
+    font-size:1em;
+    margin: 20px auto;
+    color:rgb(255, 255, 255);
+}
+
+@keyframes grow{
+    0%{
+        height:200px;
+    }
+    100% {
+        height:2000px;
+    }
+}

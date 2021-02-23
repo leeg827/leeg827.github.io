@@ -67,15 +67,6 @@ body {
     height:190vh;
 }
 
-@keyframes blur {
-    0% {
-      filter:blur(0);
-    }
-  
-    100% {
-      filter:blur(1.5em);
-    }
-  }
 
   @keyframes big {
     0% {

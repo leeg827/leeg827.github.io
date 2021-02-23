@@ -1,0 +1,63 @@
+
+  body {
+    background-color:black;
+    display:inline-block;
+    margin:0px;
+}
+@font-face {    
+  font-family: 'fraktion_regular';
+  src: url(../fraktionmono/fraktionmono-regular-webfont.woff) format('woff'),
+       url(../fraktionmono/fraktionmono-regular-webfont.woff2) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {    
+  font-family: 'fraktion_italic';
+  src: url(../fraktionmono/fraktionmono-italic-webfont.woff) format('woff'),
+       url(../fraktionmono/fraktionmono-italic-webfont.woff2) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {    
+  font-family: 'fraktion_bold';
+  src: url(../fraktionmono/fraktionmono-bold-webfont.woff) format('woff'),
+       url(../fraktionmono/fraktionmono-bold-webfont.woff2) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {    
+  font-family: 'fraktion_bold_italic';
+  src: url(../fraktionmono/fraktionmono-bolditalic-webfont.woff) format('woff'),
+       url(../fraktionmono/fraktionmono-bolditalic-webfont.woff2) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+p {
+    width:480px;
+    font-family:'fraktion_regular',sans-serif;
+    font-size:1em;
+    margin: 20px auto;
+    color:rgb(255, 255, 255);
+}
+
+.pocket {
+    opacity:0;
+}
+
+.pocket:hover {
+    opacity:100;
+    transition: ease-in 5s ease-out 50s;
+}
+
+.pocket:hover::after {
+    opacity:100;
+}
+
+.paragraph {
+    width:700px;
+}
