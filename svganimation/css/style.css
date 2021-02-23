@@ -1,0 +1,98 @@
+body {
+    background-color:black;
+}
+
+#blobone{
+    z-index:1;
+    margin-top:0px;
+    margin-top: -300px;
+    margin-left: 500px;
+    animation: big 2s alternate infinite;
+}
+
+#blobtwo{
+    z-index:2;
+    margin-top: 500px;
+    margin-right:300px;
+    animation: big 2s alternate infinite;
+}
+
+#blobthree{
+    z-index:3;
+    margin-top: 200px;
+    margin-left:-500px;
+    animation: bigtwo 4s alternate infinite;
+}
+
+#blobfour{
+    z-index:4;
+    margin-top: 200px;
+    margin-left:500px;
+    animation: bigtwo 1s alternate infinite;
+}
+
+#blobfive{
+    z-index:5;
+    margin-top: 100px;
+    margin-right:-200px;
+    animation: bigtwo 3s alternate infinite;
+}
+
+#blobsix{
+    z-index:6;
+    margin-top: 700px;
+    margin-right:-200px;
+    animation: big 2s alternate infinite;
+}
+
+#blobseven{
+    z-index:7;
+    animation: bigtwo 5s alternate infinite;
+}
+
+#blobeight{
+    z-index:8;
+    animation: bigtwo 2s alternate infinite;
+}
+
+#blobnine{
+    z-index:9;
+    animation: big 3s alternate infinite;
+}
+
+.svg {
+    background-color:transparent;
+    position:absolute;
+    width:200vw;
+    height:190vh;
+}
+
+@keyframes blur {
+    0% {
+      filter:blur(0);
+    }
+  
+    100% {
+      filter:blur(1.5em);
+    }
+  }
+
+  @keyframes big {
+    0% {
+      transform:scale(1);
+    }
+  
+    100% {
+    transform:scale(2);
+    }
+  }
+
+  @keyframes bigtwo {
+    0% {
+      transform:scale(2);
+    }
+  
+    100% {
+    transform:scale(3);
+    }
+  }
