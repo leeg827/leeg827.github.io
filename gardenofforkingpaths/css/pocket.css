@@ -45,18 +45,66 @@ p {
     color:rgb(255, 255, 255);
 }
 
-.pocket {
+.watch {
     opacity:0;
 }
 
-.pocket:hover {
+.watch:hover {
     opacity:100;
     transition: ease-in 5s ease-out 50s;
 }
 
-.pocket:hover::after {
-    opacity:100;
+.chain {
+  opacity:0;
 }
+
+.chain:hover {
+  opacity:100;
+  transition: ease-in 5s ease-out 50s;
+}
+
+.ring {
+  opacity:0;
+}
+
+.ring:hover {
+  opacity:100;
+  transition: ease-in 5s ease-out 50s;
+}
+
+
+.ring:hover~.ringreveal{
+  opacity:100;
+  transition: ease-in 5s ease-out 50s;
+}
+
+.notebook {
+  opacity:0;
+}
+
+.notebook:hover {
+  opacity:100;
+  transition: ease-in 5s ease-out 50s;
+}
+
+.coin {
+  opacity:0;
+}
+
+.coin:hover {
+  opacity:100;
+  transition: ease-in 5s ease-out 50s;
+}
+
+.letter {
+  opacity:0;
+}
+
+.letter:hover {
+  opacity:100;
+  transition: ease-in 5s ease-out 50s;
+}
+
 
 .paragraph {
     width:700px;
