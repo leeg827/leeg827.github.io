@@ -1,0 +1,194 @@
+
+  @font-face {    
+    font-family: 'sectra_light';
+    src: url(../fonts/gt-sectra-display-light-trial-webfont.woff) format('woff'),
+         url(../fonts/gt-sectra-display-light-trial-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {    
+    font-family: 'sectra_light_italic';
+    src: url(../fonts/gt-sectra-display-light-italic-trial-webfont.woff) format('woff'),
+         url(../fonts/gt-sectra-display-light-italic-trial-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  @font-face {    
+    font-family: 'sectra_regular';
+    src: url(../fonts/gt-sectra-display-regular-trial-webfont.woff) format('woff'),
+         url(../fonts/gt-sectra-display-regular-trial-webfont.woff) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {    
+    font-family: 'sectra_regular_italic';
+    src: url(../fonts/gt-sectra-display-regular-italic-trial-webfont.woff) format('woff'),
+         url(../fonts/gt-sectra-display-regular-italic-trial-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {    
+    font-family: 'sectra_medium';
+    src: url(../fonts/gt-sectra-display-medium-trial-webfont.woff) format('woff'),
+         url(../fonts/gt-sectra-display-medium-trial-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+body {
+    margin:0px;
+    background-color:black;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+h1 {
+    font-family:'sectra_regular_italic',serif;
+    letter-spacing: .2em;
+    color:red;
+    font-size:1.5em;
+    text-align:center;
+}
+
+nav {
+    margin:0;
+    width:100%;
+    padding-right:100%;
+    background-color:pink;
+}
+
+#container {
+    display:flex;
+    background-color:pink;
+    width:260%;
+    flex-direction:row;
+    justify-content:space-between;
+    animation: moving 20s linear infinite;
+}
+
+#container2 {
+    display:flex;
+    flex-direction:row;
+    width:100%;
+}
+
+#flexbox {
+    display:flex;
+    flex-direction:column;
+    height:80%;
+    width:20vw;
+    justify-content:space-between;
+}
+
+.flex2 {
+    display:flex;
+    flex-direction:row;
+    width:20vw;
+    margin-top:3vh;
+}
+
+.receipt {
+    width:20vw;
+    height:55vh;
+}
+
+#record {
+    width:10vw;
+    height:15vh;
+}
+
+#plastic {
+    width:10vw;
+    height:15vh;
+}
+
+a {
+color:red;
+}
+
+a:hover {
+    color:rgb(67, 92, 255);
+    
+}
+
+#container:hover {
+    animation-play-state: paused;
+}
+
+.short {
+    font-family:'sectra_light', serif;
+    font-size: 3em;
+  }
+
+.short:hover {
+    font-family:'sectra_light_italic', serif;
+    font-size: 3em;
+  }
+
+.medium {
+    font-family:'sectra_regular_italic', serif;
+    font-size: 3em;
+}
+
+.medium:hover {
+    font-family:'sectra_regular', serif;
+    font-size: 3em;
+}
+
+.long {
+    font-family:helvetica;
+    font-size: 3em;
+}
+
+.long:hover {
+    font-family:helvetica;
+    font-size: 3em;
+    font-style:italic;
+}
+
+.navtitle {
+    width:40vw;
+}
+
+
+@keyframes moving{
+    0%{
+        transform:translateX(0%);
+    }
+    100% {
+        transform:translateX(-100%);
+    }
+}
+
+.grid {
+    margin-top:8.2vh;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: 1px solid red;
+}
+
+.grid > div > iframe {
+    width:230px;
+    height:250px;
+    border: 1px solid red;
+}
+
+.grid > div:hover {
+    transform:translateY(-50px)
+}
+
+p {
+ font-family:helvetica;
+ font-size:1em;
+ color:red;
+ z-index:2;
+ margin-left:95vw;
+ margin-top:9vh;
+}
