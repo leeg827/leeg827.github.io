@@ -169,7 +169,6 @@ p {
     animation-play-state:running;
     animation:appear 5s infinite alternate; 
 }
-animation:appear 5s infinite alternate;
 
 @keyframes appear {
     0%{
