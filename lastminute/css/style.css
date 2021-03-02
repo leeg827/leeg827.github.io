@@ -139,3 +139,196 @@ z-index:2;
 margin-top:20%;
 margin-left:-100%;
 }
+
+.door {
+    width:40vw;
+    height:70vh;
+    border:white solid 2px;
+    background-color:black;
+    overflow-x:hidden;
+    margin-left:450px;
+    margin-top:100px;
+    overflow-y:scroll;
+    justify-content:center;
+}
+
+.door>div {
+    color:white;
+    font-size:2em;
+    width:37vw;
+    margin-left:1vw;
+    margin-top:2vh;
+    margin-bottom:4vh;
+}
+
+.directions {
+    font-size:10em;
+    margin-top:0;
+}
+
+.directions:nth-child(1) {
+margin-left:0vw;
+}
+
+.directions:nth-child(2) {
+margin-left:15vw;
+}
+
+.directions:nth-child(3) {
+margin-left:30vw;
+}
+
+.directions:nth-child(4) {
+margin-left:30vw;
+}
+
+.directions:nth-child(5) {
+margin-left:15vw;
+}
+
+.directions:nth-child(6) {
+margin-left:30vw;
+}
+
+.directions:nth-child(7) {
+margin-left:30vw;
+}
+
+.directions:nth-child(8) {
+margin-left:15vw;
+}
+
+.directions:nth-child(9) {
+margin-left:30vw;
+}
+
+.directions:nth-child(10) {
+margin-left:45vw;
+}
+
+.directions:nth-child(11) {
+margin-left:45vw;
+}
+
+.directions:nth-child(12) {
+margin-left:30vw;
+}
+
+.directions:nth-child(13) {
+margin-left:15vw;
+}
+
+.conversation {
+    display:flex;
+    flex-direction:row;
+    width:40vw;
+    height:70vh;
+    border:white solid 2px;
+    background-color:black;
+    overflow-x:hidden;
+    margin-left:450px;
+    margin-top:100px;
+    overflow-y:scroll;
+}
+
+.conversation>div {
+    color:white;
+}
+
+.persons {
+    width:20vw;
+    height:200vh;
+}
+
+
+.labyrinth {
+    display:flex;
+    flex-direction:column;
+    width:18vw;
+    height:30vh;
+    border:white solid 2px;
+}
+
+.labyrinth>div {
+    border:white solid 2px;
+    width:18vw;
+    height:10vh;
+    margin:0;
+}
+
+.man1:nth-child(1) {
+     margin-top:5vh
+}
+.man1:nth-child(2){
+    margin-top: 90vh
+}
+.man1:nth-child(3){
+    margin-top:10vh;
+}
+.man1:nth-child(4) {
+margin-top: 40vh;
+}
+.man1:nth-child(5) {
+    margin-top:80vh;
+}
+.man1:nth-child(6) {
+    margin-top:200vh;
+}
+.man1:nth-child(7) {
+     margin-top:90vh;
+}
+
+.man1:nth-child(8) {
+    margin-top:250vh;
+}
+
+.man1:nth-child(9) {
+    margin-top:50vh;
+    margin-bottom:5vh;
+}
+
+.man2:nth-child(1) {
+    margin-top:70vh;
+}
+.man2:nth-child(2){
+    margin-top:140vh;
+}
+.man2:nth-child(3){
+    margin-top:30vh;
+}
+.man2:nth-child(4){
+    margin-top:90;
+}
+.man2:nth-child(5){
+    margin-top:30vh;
+}
+.man2:nth-child(6){
+    margin-top:10vh;
+}
+.man2:nth-child(7){
+    margin-top:10vh;
+}
+.man2:nth-child(8){
+    margin-top:40vh;
+}
+.man2:nth-child(9){
+    margin-top:20vh;
+}
+.man2:nth-child(10){
+    margin-top:20vh;
+}
+.man2:nth-child(11){
+    margin-top:20vh;
+}
+.man2:nth-child(12){
+    margin-top:20vh;
+}
+
+.man2:nth-child(13){
+    margin-top:40vh;
+}
+
+.man2:nth-child(14){
+    margin-top:40vh;
+}
+
