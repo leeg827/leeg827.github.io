@@ -1,0 +1,132 @@
+
+@font-face {    
+    font-family: 'fraktion_regular';
+    src: url(../fraktionmono/fraktionmono-regular-webfont.woff) format('woff'),
+         url(../fraktionmono/fraktionmono-regular-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {    
+    font-family: 'fraktion_italic';
+    src: url(../fraktionmono/fraktionmono-italic-webfont.woff) format('woff'),
+         url(../fraktionmono/fraktionmono-italic-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
+  @font-face {    
+    font-family: 'fraktion_bold';
+    src: url(../fraktionmono/fraktionmono-bold-webfont.woff) format('woff'),
+         url(../fraktionmono/fraktionmono-bold-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {    
+    font-family: 'fraktion_bold_italic';
+    src: url(../fraktionmono/fraktionmono-bolditalic-webfont.woff) format('woff'),
+         url(../fraktionmono/fraktionmono-bolditalic-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+body {
+    background-color:black;
+}
+
+.grid {
+    display:grid;
+    grid-template-columns: 30vw 40vw 30vw 30vw;
+    grid-template-rows: 40vh 40vh 40vh 40vh;
+    column-gap:15vw;
+    row-gap:15vh;
+}
+
+.griditem {
+    justify-self:center;
+}
+
+.verticalombre {
+    background: linear-gradient(180deg, #FF5858 0%, #f1c1c1 100%);
+}
+
+.horizontalombre {
+    background: linear-gradient(90deg, #FF5858 0%, #DA9898 100%);
+}
+
+.square {
+    width:15vw;
+    height:30vh;
+}
+
+.bigrect {
+    width:40vw;
+    height:65vh;
+}
+
+.smallrect{
+    width:20vw;
+    height:46vh;
+}
+
+.vertrect {
+    width:20vw;
+    height:30vh;
+}
+
+.horzrect {
+    width:30vw;
+    height:15vh;
+}
+
+.text {
+    align-self:center;
+    color: #f92b2b;
+    font-size:1em;
+    font-family:'fraktion_regular',sans-serif;
+}
+
+.container{
+    margin-left:25vw;
+    margin-top:5vh;
+    width:50vw;
+    height:90vh;
+    border:pink solid 2px;
+    display:flex;
+    flex-direction:column;
+}
+
+.container-item {
+    width:45vw;
+}
+
+.gate {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.07%, rgba(194, 104, 104, 0.761556) 55.39%, #FF5F5F 81.04%);
+}
+
+.doors {
+    width:40vw;
+    height:70vh;
+    border:hotpink solid 2px;
+    display:flex;
+    flex-direction:row;
+    overflow:hidden;
+}
+
+.door {
+    width:20vw;
+    height:70vh;
+    margin:0px;
+    background:linear-gradient(180deg, #FF5858 0%, #f1c1c1 100%);
+}
+
+.doors:hover ~ .right {
+   transform:translateX(100%)
+}
+
+.doors:hover ~ .left {
+    transform:translateX(-100%)
+}
+

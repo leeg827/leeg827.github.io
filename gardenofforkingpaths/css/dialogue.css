@@ -1,0 +1,62 @@
+body {
+    background-color:black;
+}
+
+@font-face {    
+    font-family: 'fraktion_regular';
+    src: url(../fraktionmono/fraktionmono-regular-webfont.woff) format('woff'),
+         url(../fraktionmono/fraktionmono-regular-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+.container {
+    border:pink solid 2px;
+    width:40vw;
+    height:90vh;
+    margin-left:30vw;
+}
+
+.container-item {
+    width:40vw;
+    height:20vh;
+    margin:0;
+    font-family:'fraktion_regular',sans-serif;
+    font-size:1em;
+    color:white;
+}
+
+.container-2-item {
+    width:40vw;
+    height:69vh;
+    margin:0;
+    overflow-y:scroll;
+}
+
+.smallitem {
+    width:40vw;
+    height:20vh;
+    margin:0;
+    font-family:'fraktion_regular',sans-serif;
+    border:pink solid 2px;
+    color:white;
+}
+
+
+a {
+    background: linear-gradient(180deg, #FF5858 0%, #DA9898 100%);
+    width:200px;
+    border:pink solid 2px;
+    text-decoration:none;
+}
+
+.link {
+    padding-left:40vw;
+    padding-top:20vh;
+    color:white;
+    margin:0;
+    font-family:'fraktion_regular',sans-serif;
+    border:pink solid 2px;
+    color:white;
+}
