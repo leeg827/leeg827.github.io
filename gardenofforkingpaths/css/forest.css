@@ -88,6 +88,13 @@ body {
     font-family:'fraktion_regular',sans-serif;
 }
 
+.text2 {
+    align-self:center;
+    color: #ffffff;
+    font-size:1em;
+    font-family:'fraktion_regular',sans-serif;
+}
+
 .container{
     margin-left:25vw;
     margin-top:5vh;
@@ -96,6 +103,7 @@ body {
     border:pink solid 2px;
     display:flex;
     flex-direction:column;
+    overflow-y:scroll;
 }
 
 .container-item {
@@ -130,3 +138,55 @@ body {
     transform:translateX(-100%)
 }
 
+.story {
+    display:flex;
+    flex-direction:row;
+    width:40vw;
+    height:30vh;
+    justify-content:space-between;
+    padding: 5vw 5vw 5vw 5vw
+}
+
+.storyone {
+    color: #ffffff;
+    font-size:1em;
+    width:20vw;
+    height:30vh;
+    font-family:'fraktion_regular',sans-serif;
+}
+
+.storytwo {
+    color: #ffffff;
+    font-size:1em;
+    text-align:right;
+    width:20vw;
+    height:30vh
+    font-family:'fraktion_regular',sans-serif;
+}
+
+.letter{
+    margin-left:25vw;
+    margin-top:5vh;
+    width:50vw;
+    height:90vh;
+    border:pink solid 2px;
+    background:linear-gradient(180deg, #FF5858 0%, #f1c1c1 100%);
+    display:flex;
+    flex-direction:column;
+    overflow-y:scroll;
+}
+
+.letter-item {
+    margin-top:10vh;
+    margin-bottom:10vh;
+    width:45vw;
+}
+
+.red {
+    color:red;
+}
+
+.link {
+    text-decoration:none;
+    color:white;
+}

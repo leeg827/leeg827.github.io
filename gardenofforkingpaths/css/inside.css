@@ -58,7 +58,24 @@ body{
     overflow-y:scroll;
 }
 
+.conversation2 {
+    margin-left:10vw;
+    width:40vw;
+    height:60vh;
+    border:white solid 1px;
+    overflow-y:scroll;
+    margin-top:20vh;
+}
+
 .person {
+    width:20vw;
+    height:200vh;
+    border:white solid 1px;
+    display:flex;
+    flex-direction:column;
+}
+
+.person2 {
     width:20vw;
     height:200vh;
     border:white solid 1px;
@@ -73,7 +90,28 @@ body{
     margin-left:170vw;
 }
 
+.bookshelf2 {
+    width: 30vw;
+    height:60vh;
+    margin-left:50vw;
+    margin-top:-60vh;
+}
+
 .drawer {
+    border:white solid 2px;
+    width:30vw;
+    height:20vh;
+    overflow-x:scroll;
+}
+
+.drawer {
+    border:white solid 2px;
+    width:30vw;
+    height:20vh;
+    overflow-x:scroll;
+}
+
+.drawer2 {
     border:white solid 2px;
     width:30vw;
     height:20vh;
@@ -95,4 +133,12 @@ body{
     background-color:pink;
     margin-left:220vw;
     margin-top:-50vh;
+}
+
+.clock {
+    width:20vw;
+    height:40vh;
+    border-radius:50%;
+    background-color:pink;
+    margin-left:60vw;
 }
