@@ -19,8 +19,6 @@ button.addEventListener('click',function(){
    count.innerHTML = amount;
 });
 
-console.log('hello world')
-
 container.addEventListener ('click',function(event){
     if(event.target.classList == 'circle'){
         event.target.remove();
