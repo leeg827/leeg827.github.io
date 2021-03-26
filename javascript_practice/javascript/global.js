@@ -56,5 +56,6 @@ yellowButton.addEventListener ('click',function(){
 clear.addEventListener('click',function(){
     container.innerHTML='';
     count.innerHTML='0';
+    alert("All clear!");
 })
 
