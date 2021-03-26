@@ -1,0 +1,26 @@
+button {
+    width:10vw;
+    height:4vh;
+    background-color:rgb(234, 111, 104);
+    box-shadow: inset 0px 0px 3vw #c6c9ff;
+    color:white;
+    margin:5vw;
+}
+
+#container {
+    display:flex;
+    width: 100vw;
+    height:100vh;
+    background-color:lightgreen;
+    box-shadow: inset 0px 0px 20vw #8186e3;
+}
+
+.circle {
+    position:relative;
+    width:4vw;
+    height:4vh;
+    border-radius:50%;
+    background-color:rgb(248, 211, 217);
+    box-shadow: inset 0px 0px 1vw #e38181;
+}
+

@@ -42,6 +42,7 @@ body {
     grid-template-rows: 40vh 40vh 40vh 40vh;
     column-gap:15vw;
     row-gap:15vh;
+    margin:5%;
 }
 
 .griditem {
@@ -63,7 +64,7 @@ body {
 
 .bigrect {
     width:40vw;
-    height:65vh;
+    height:45vh;
 }
 
 .smallrect{
@@ -83,16 +84,14 @@ body {
 
 .text {
     align-self:center;
-    color: #f92b2b;
-    font-size:1em;
-    font-family:'fraktion_regular',sans-serif;
-}
-
-.text2 {
-    align-self:center;
     color: #ffffff;
     font-size:1em;
     font-family:'fraktion_regular',sans-serif;
+    margin-top:20%;
+}
+
+a {
+    color:red;
 }
 
 .container{

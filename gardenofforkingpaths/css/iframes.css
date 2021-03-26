@@ -95,122 +95,53 @@ body {
 
 ul {
     list-style:none;
-    margin-top:40px;
+    padding:0;
 }
 
 .stairs {
-    width:413px;
+    width:auto;
     height:104px;
+    margin-top:10vh;
     background: linear-gradient(180deg, #FF5555 0%, rgba(196, 196, 196, 0) 100%);
 }
 
-li {
-    margin:30px;
+#laststair {
+  background: linear-gradient(180deg, #ff0000 0%, rgba(0, 0, 0, 0) 100%);
+  margin-bottom:5vh;
 }
 
 #growing {
-    width:400px;
-    height:200px;
-    border: 5px solid rgb(244, 57, 57);
-    animation: grow 20s 1 forwards;
-    animation-play-state:paused;
-    margin-top:50px;
-    margin-left:70px;
+    background-color:black;
+    font-size:.9em;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
 }
 
-#growing:hover {
-    width:400px;
-    animation-play-state:running;
-    border: 5px solid rgb(244, 57, 57);
-    margin-top:50px;
-    margin-left:70px;
+.car {
+    height:200px;
+    margin-left:10%;
+}
+
+.station {
+    width:500px;
+    margin-left:30%;
 }
 
 p {
     width:380px;
     font-family:'fraktion_regular',sans-serif;
-    font-size:1em;
+    font-size:1.2em;
     margin: 20px auto;
     color:rgb(255, 255, 255);
 }
 
-.station {
-    margin-top:1750px;
-    z-index:2;
-}
-
-.station:hover{
-    animation-play-state:running;
-}
-.station:hover~#trainstation {
-    animation: appear 2s 1 forwards;
-}
-
-@keyframes grow{
-    0%{
-        height:200px;
-    }
-    100% {
-        height:2000px;
-    }
-}
 
 .trainstation {
-    margin-top:-50vh;
-    margin-left:500px;
     width:870px;
     height:400px;
-    z-index:2;
-    animation:appear 5s infinite alternate; 
-    animation-play-state:paused;
 }
 
-.trainstation:hover {
-    animation-play-state:running;
-    animation:appear 5s infinite alternate; 
-}
-
-@keyframes appear {
-    0%{
-        transform:opacity(0%);
-    }
-    100%{
-        transform:opacity(100%);
-    }
-}
-
-@font-face {    
-    font-family: 'fraktion_regular';
-    src: url(../fraktionmono/fraktionmono-regular-webfont.woff) format('woff'),
-         url(../fraktionmono/fraktionmono-regular-webfont.woff2) format('woff2');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {    
-    font-family: 'fraktion_italic';
-    src: url(../fraktionmono/fraktionmono-italic-webfont.woff) format('woff'),
-         url(../fraktionmono/fraktionmono-italic-webfont.woff2) format('woff2');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  
-  @font-face {    
-    font-family: 'fraktion_bold';
-    src: url(../fraktionmono/fraktionmono-bold-webfont.woff) format('woff'),
-         url(../fraktionmono/fraktionmono-bold-webfont.woff2) format('woff2');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {    
-    font-family: 'fraktion_bold_italic';
-    src: url(../fraktionmono/fraktionmono-bolditalic-webfont.woff) format('woff'),
-         url(../fraktionmono/fraktionmono-bolditalic-webfont.woff2) format('woff2');
-    font-weight: normal;
-    font-style: normal;
-  }
 
 body {
     background-color:black;
@@ -218,13 +149,26 @@ body {
 }
 
 #traincontainer {
-    width:3000px;
+    width:90%;
     height:400px;
+    border: white solid 2px;
+    margin-top:15%;
+    margin-left:5%;
+    overflow-x:scroll;
+    overflow-y:hidden;
+    display:flex;
+    flex-direction:row;
+}
+
+#ride {
+    display:flex;
+    flex-direction:column;
+    margin-left:40%;
 }
 
 #train {
-    background:linear-gradient(180deg, #FF5555 0%, #FFFFFF 100%);;
-    width:3000px;
+    background:linear-gradient(180deg, #FF5555 0%, #FFFFFF 100%);
+    width:300%;
     height:275px;
     display:flex;
     flex-direction:row;
@@ -232,7 +176,7 @@ body {
 
 #sidewalk {
     background-color:rgb(0, 0, 0);
-    width:3000px;
+    width:300%;
     height:125px;
     display:flex;
     flex-direction:row;
@@ -242,114 +186,76 @@ body {
     width:300px;
     font-family:'fraktion_regular',sans-serif;
     font-size:1em;
+    margin-top:20px;
     color:black;
+}
+
+.traintalk:nth-child(1) {
+    margin-left:5%;
+}
+
+.traintalk:nth-child(2) {
+    margin-left:10%;
+}
+
+.traintalk:nth-child(3) {
+    margin-left:20%;
+}
+
+.traintalk:nth-child(4) {
+    margin-left:15%;
+}
+
+.traintalk:nth-child(5) {
+    margin-left:8%;
 }
 
 
 .sidewalkoff {
-    width:200px;
+    width:400px;
     font-family:'fraktion_regular',sans-serif;
     font-size:1em;
+    margin-top:5px;
     color:rgb(255, 255, 255);
 }
 
+.sidewalkoff:nth-child(1){
+    margin-left:35%;
+}
 
-body {
+.sidewalkoff:nth-child(2){
+    margin-left:50%;
+}
+
+.pink {
+  color:red;
+}
+
+a {
+  color:red;
+}
+
+#block {
     background-color:black;
-    display:inline-block;
-    margin:0px;
-}
-@font-face {    
-  font-family: 'fraktion_regular';
-  src: url(../fraktionmono/fraktionmono-regular-webfont.woff) format('woff'),
-       url(../fraktionmono/fraktionmono-regular-webfont.woff2) format('woff2');
-  font-weight: normal;
-  font-style: normal;
+    height:auto;
+    width:200%;
 }
 
-@font-face {    
-  font-family: 'fraktion_italic';
-  src: url(../fraktionmono/fraktionmono-italic-webfont.woff) format('woff'),
-       url(../fraktionmono/fraktionmono-italic-webfont.woff2) format('woff2');
-  font-weight: normal;
-  font-style: normal;
+.pocket>p{
+opacity:0;
+margin-left:1vw;
+margin-top:5vh;
+margin-bottom:2vh;
 }
 
-
-@font-face {    
-  font-family: 'fraktion_bold';
-  src: url(../fraktionmono/fraktionmono-bold-webfont.woff) format('woff'),
-       url(../fraktionmono/fraktionmono-bold-webfont.woff2) format('woff2');
-  font-weight: normal;
-  font-style: normal;
+.pocket>p:hover{
+opacity:100;
+transition-duration:1s;
 }
 
-@font-face {    
-  font-family: 'fraktion_bold_italic';
-  src: url(../fraktionmono/fraktionmono-bolditalic-webfont.woff) format('woff'),
-       url(../fraktionmono/fraktionmono-bolditalic-webfont.woff2) format('woff2');
-  font-weight: normal;
-  font-style: normal;
+.revolver{
+  color:#ff4a4a;
+  cursor:pointer;
 }
 
-
-.watch {
-    opacity:0;
-}
-
-.watch:hover {
-    opacity:100;
-    transition: ease-in 5s ease-out 50s;
-}
-
-.chain {
-  opacity:0;
-}
-
-.chain:hover {
-  opacity:100;
-  transition: ease-in 5s ease-out 50s;
-}
-
-.ring {
-  opacity:0;
-}
-
-.ring:hover {
-  opacity:100;
-  transition: ease-in 5s ease-out 50s;
-}
-
-
-.ring:hover~.ringreveal{
-  opacity:100;
-  transition: ease-in 5s ease-out 50s;
-}
-
-.notebook {
-  opacity:0;
-}
-
-.notebook:hover {
-  opacity:100;
-  transition: ease-in 5s ease-out 50s;
-}
-
-.coin {
-  opacity:0;
-}
-
-.coin:hover {
-  opacity:100;
-  transition: ease-in 5s ease-out 50s;
-}
-
-.letter {
-  opacity:0;
-}
-
-.letter:hover {
-  opacity:100;
-  transition: ease-in 5s ease-out 50s;
-}
 
