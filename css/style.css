@@ -27,7 +27,8 @@ a {
     text-decoration:none;
 }
 
-img{
+.image {
     width:200px;
-    height:250px;
+    height:400px;
+    border-style:none;
 }
