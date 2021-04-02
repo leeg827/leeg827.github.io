@@ -7,7 +7,7 @@ var Airtable = require("airtable");
 console.log(Airtable);
 
 // use the airtable library to get a variable that represents one of our bases
-var base = new Airtable({ apiKey: "key4Jc4fqyYdDCwcd" }).base(
+var base = new Airtable({ apiKey: " }).base(
   "app13Jk256humRdop"
 );
 
