@@ -29,7 +29,7 @@ body {
 
 .container-2-item {
     width:40vw;
-    height:69vh;
+    height:66vh;
     margin:0;
     overflow-y:scroll;
 }
@@ -45,10 +45,10 @@ body {
 
 
 a {
-    background: linear-gradient(180deg, #FF5858 0%, #DA9898 100%);
-    width:200px;
-    border:pink solid 2px;
     text-decoration:none;
+    color:white;
+    font-family:'fraktion_regular',sans-serif;
+    background:linear-gradient(180deg, #ff9595 0%, #FFFFFF 100%);
 }
 
 .link {
@@ -57,6 +57,33 @@ a {
     color:white;
     margin:0;
     font-family:'fraktion_regular',sans-serif;
-    border:pink solid 2px;
+}
+
+ul {
+    display:flex;
+    flex-direction:column;
+    margin:0px;
+    padding:0px;
+}
+
+li {
+    width:40vw;
+    height:20vh;
+    border-top: white solid 1px;
+    margin:0px;
+    color:white;
+    font-family:'fraktion_regular',sans-serif;
+    text-indent:2vw;
+    padding-top:2vh;
+}
+
+.red {
+    color:red;
+}
+
+.text {
+    width:35vw;
+    margin-top:4vh;
+    margin-left:2.5vw;
     color:white;
 }

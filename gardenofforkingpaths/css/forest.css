@@ -85,7 +85,7 @@ body {
 .text {
     align-self:center;
     color: #ffffff;
-    font-size:1em;
+    font-size:1.3em;
     font-family:'fraktion_regular',sans-serif;
     margin-top:20%;
 }
@@ -97,7 +97,7 @@ a {
 .container{
     margin-left:25vw;
     margin-top:5vh;
-    width:50vw;
+    width:45vw;
     height:90vh;
     border:pink solid 2px;
     display:flex;
@@ -106,7 +106,8 @@ a {
 }
 
 .container-item {
-    width:45vw;
+    width:40vw;
+    padding:2.5vw;
 }
 
 .gate {
@@ -182,7 +183,8 @@ a {
 }
 
 .red {
-    color:red;
+    color:rgb(255, 67, 67);
+    font-weight:bold;
 }
 
 .link {

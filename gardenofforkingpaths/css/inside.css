@@ -8,6 +8,9 @@
   
 body{
     background-color:black;
+    overflow-x:scroll;
+    display:flex;
+    flex-direction:row;
 }
 
 .library {
@@ -16,55 +19,94 @@ body{
     width:70vw;
     height:90vh;
     margin-top:5vh;
+    margin-left:15vw;
+    border:pink solid 2px;
 }
 
 .libraryrow {
     height:30vh;
     width:70vw;
-    border:pink solid 2px;
+    border-bottom:pink solid 2px;
     display:flex;
     flex-direction:row;
     justify-content:space-between;
 }
 
 .text {
+    margin-top:8vh;
     width:70vw;
     height:30vh;
     font-family:'fraktion_regular',sans-serif;
     font-size:1em;
     color:white;
     justify-content: center;
+    margin-left:5vw;
+    margin-right:5vw;
 }
 
 .book {
+    margin-right:5vw;
     width:10vw;
     height:30vh;
-    background-color:blue;
+    background: linear-gradient(180deg, #FFAB2E 0%, #906809 100%);
 }
 
 
 .book2{
+    margin-left:5vw;
     width:10vw;
     height:30vh;
-    background-color:red;
+    background: linear-gradient(180deg, #FF2E47 0%, #FFC9C9 100%);
+}
+
+.book3{
+    margin-left:5vw;
+    width:10vw;
+    height:30vh;
+    background: linear-gradient(180deg, #2E36FF 0%, #C9CEFF 96.35%);
+}
+
+.recordplayer{
+    width:30vw;
+    height:10vh;
+    margin-top:20vh;
+    margin-right:5vw;
+    background: linear-gradient(270deg, #78512D -17.14%, rgb(64, 41, 14) 100%);
+}
+
+.red {
+    color:red;
+}
+
+.twocharacter {
+    display:flex;
+    flex-direction:row;
+    border: pink solid 1px;
+    width:80vw;
+    height:80vh;
+    overflow-y:scroll;
+}
+
+.convocontainer {
+    margin-left:25vw;
+    display:flex;
+    flex-direction:row;
 }
 
 .conversation {
-    margin-left:100vw;
-    margin-top:-75vh;
-    width:40vw;
-    height:60vh;
+    margin-top:18vh;
+    width:25vw;
+    height:70vh;
     border:white solid 1px;
     overflow-y:scroll;
 }
 
 .conversation2 {
-    margin-left:10vw;
-    width:40vw;
-    height:60vh;
+    width:25vw;
+    height:70vh;
     border:white solid 1px;
     overflow-y:scroll;
-    margin-top:20vh;
+    margin-top:18vh;
 }
 
 .person {
