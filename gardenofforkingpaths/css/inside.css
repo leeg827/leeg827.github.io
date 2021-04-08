@@ -335,3 +335,144 @@ a {
 .stephen2:nth-child(10) {
     margin-top:5vh;
 }
+
+.mcfail{
+    width:20vw;
+    font-family:'fraktion_regular',sans-serif;
+    font-size:1em;
+    color:white;
+    margin-left:2.5vw;
+    margin-right:2.5vw;
+}
+
+.stephenfail{
+    width:20vw;
+    font-family:'fraktion_regular',sans-serif;
+    font-size:1em;
+    color:white;
+    margin-left:2.5vw;
+    margin-right:2.5vw;
+}
+
+.mcfail:nth-child(1) {
+    margin-top:10vh;
+}
+
+.mcfail:nth-child(2) {
+    margin-top:10vh;
+}
+
+.mcfail:nth-child(3) {
+    margin-top:110vh;
+}
+
+.mcfail:nth-child(4) {
+    margin-top:5vh;
+    margin-bottom:5vh;
+}
+
+.stephenfail:nth-child(1){
+    margin-top:110vh;
+}
+
+.tryagain {
+    color:red;
+    text-decoration:underline;
+    font-size:2em;
+    margin-left:0;
+}
+
+.mcdeath{
+    width:20vw;
+    font-family:'fraktion_regular',sans-serif;
+    font-size:1em;
+    color:white;
+    margin-left:2.5vw;
+    margin-right:2.5vw;
+}
+
+.stephendeath{
+    width:20vw;
+    font-family:'fraktion_regular',sans-serif;
+    font-size:1em;
+    color:white;
+    margin-left:2.5vw;
+    margin-right:2.5vw;
+}
+
+.mcdeath:nth-child(1) {
+    margin-top:10vh;
+}
+
+.mcdeath:nth-child(2) {
+    margin-top:10vh;
+}
+
+.mcdeath:nth-child(3) {
+    margin-top:110vh;
+}
+
+.mcdeath:nth-child(4) {
+    margin-top:5vh;
+    margin-bottom:5vh;
+}
+
+.stephendeath:nth-child(1){
+    margin-top:110vh;
+}
+
+.tryagain {
+    color:red;
+    text-decoration:underline;
+    font-size:2em;
+    margin-left:0;
+}
+
+.mctrue{
+    width:20vw;
+    font-family:'fraktion_regular',sans-serif;
+    font-size:1em;
+    color:white;
+    margin-left:2.5vw;
+    margin-right:2.5vw;
+}
+
+.stephentrue{
+    width:20vw;
+    font-family:'fraktion_regular',sans-serif;
+    font-size:1em;
+    color:white;
+    margin-left:2.5vw;
+    margin-right:2.5vw;
+}
+
+.mctrue:nth-child(1) {
+    margin-top:10vh;
+}
+
+.mctrue:nth-child(2) {
+    margin-top:10vh;
+}
+
+.mctrue:nth-child(3) {
+    margin-top:110vh;
+    margin-bottom:5vh;
+}
+
+.stephentrue:nth-child(1){
+    margin-top:110vh;
+}
+
+.tryagain {
+    color:red;
+    text-decoration:underline;
+    font-size:2em;
+    margin-left:0;
+}
+
+.finallink {
+    margin-left:0;
+    font-size:1em;
+    color:red;
+    text-decoration:underline;
+}
