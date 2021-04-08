@@ -141,32 +141,47 @@ a {
 .story {
     display:flex;
     flex-direction:row;
-    width:40vw;
+    width:50vw;
     height:30vh;
-    justify-content:space-between;
-    padding: 5vw 5vw 5vw 5vw
 }
 
 .storyone {
+    border-right: white solid 2px;
+    border-top:white solid 2px;
+    border-bottom:white solid 2px;
     color: #ffffff;
-    font-size:1em;
-    width:20vw;
-    height:30vh;
-    font-family:'fraktion_regular',sans-serif;
+    width:25vw;
+    height:fit-content;
 }
 
 .storytwo {
-    color: #ffffff;
-    font-size:1em;
-    text-align:right;
+    border-top:white solid 2px;
+    border-bottom:white solid 2px;
+    width:30vw;
+    height:fit-content;
+}
+
+.storytext{
     width:20vw;
-    height:30vh
+    margin-left:2.5vw;
+    margin-right:2.5vw;
+    margin-top:5vh;
+    margin-bottom:3vh;
+    height:30vh;
+    color:white;
     font-family:'fraktion_regular',sans-serif;
 }
 
-.letter{
+.newconvo {
+    overflow-y:scroll;
+    overflow-x:hidden;
+    height:90vh;
+    width:50vw;
     margin-left:25vw;
     margin-top:5vh;
+}
+
+.letter{
     width:50vw;
     height:90vh;
     border:pink solid 2px;
@@ -180,6 +195,14 @@ a {
     margin-top:10vh;
     margin-bottom:10vh;
     width:45vw;
+    font-family:'fraktion_regular',sans-serif;
+    font-size:1em;
+    color:white;
+    margin-left:2vw;
+}
+
+#last {
+    margin-top:20vh;
 }
 
 .red {

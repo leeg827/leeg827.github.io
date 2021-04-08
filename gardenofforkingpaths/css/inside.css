@@ -223,6 +223,11 @@ body{
     border-bottom: white solid 2px;
 }
 
+.drawer>li:hover {
+    background-color:red;
+    transition: 1s ease-in-out;
+}
+
 a {
     text-decoration:none;
     font-family:'fraktion_regular',sans-serif;
@@ -231,15 +236,12 @@ a {
     color:black;
 }
 
-.open:hover {
-    background-color:red;
-    transition: 1s ease-in-out;
-}
-
 .letter {
     width:50vw;
     height:20vh;
     font-family:'fraktion_regular',sans-serif;
     color:white;
     font-size:1em;
+    display:flex;
+    flex-direction:column;
 }
