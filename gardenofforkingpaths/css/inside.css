@@ -192,6 +192,22 @@ body{
     flex-direction:column;
 }
 
+.dialogue {
+    width:25vw;
+    height:fit-content;
+    border-right:white solid 1px;
+    display:flex;
+    flex-direction:column;
+}
+
+.dialogue2 {
+    width:25vw;
+    height:fit-content;
+    border-left:white solid 1px;
+    display:flex;
+    flex-direction:column;
+}
+
 
 .bookshelf {
     width: 30vw;
@@ -244,4 +260,78 @@ a {
     font-size:1em;
     display:flex;
     flex-direction:column;
+}
+
+.maincharacter2{
+    width:20vw;
+    font-family:'fraktion_regular',sans-serif;
+    font-size:1em;
+    color:white;
+    margin-left:2.5vw;
+    margin-right:2.5vw;
+}
+
+.stephen2{
+    width:20vw;
+    font-family:'fraktion_regular',sans-serif;
+    font-size:1em;
+    color:white;
+    margin-left:2.5vw;
+    margin-right:2.5vw;
+}
+
+.maincharacter2:nth-child(1) {
+    margin-top:5vh;
+}
+
+.maincharacter2:nth-child(2) {
+    margin-top:130vh;
+}
+
+.maincharacter2:nth-child(3) {
+    margin-top:30vh;
+}
+
+.maincharacter2:nth-child(4) {
+    margin-top:5vh;
+}
+
+.maincharacter2:nth-child(5) {
+    margin-top:220vh;
+}
+
+.stephen2:nth-child(1) {
+    margin-top:55vh;
+}
+
+.stephen2:nth-child(2) {
+    margin-top:30vh;
+}
+
+.stephen2:nth-child(3) {
+    margin-top:35vh;
+}
+
+.stephen2:nth-child(4) {
+    margin-top:10vh;
+}
+
+.stephen2:nth-child(5) {
+    margin-top:35vh;
+}
+
+.stephen2:nth-child(6) {
+    margin-top:15vh;
+}
+
+.stephen2:nth-child(7) {
+    margin-top:20vh;
+}
+
+.stephen2:nth-child(9) {
+    margin-top:40vh;
+}
+
+.stephen2:nth-child(10) {
+    margin-top:5vh;
 }
