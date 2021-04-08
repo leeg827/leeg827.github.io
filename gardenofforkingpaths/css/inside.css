@@ -44,6 +44,84 @@ body{
     margin-right:5vw;
 }
 
+.maincharacter{
+    width:20vw;
+    font-family:'fraktion_regular',sans-serif;
+    font-size:1em;
+    color:white;
+    margin-left:2.5vw;
+    margin-right:2.5vw;
+}
+
+.stephen{
+    width:20vw;
+    font-family:'fraktion_regular',sans-serif;
+    font-size:1em;
+    color:white;
+    margin-left:2.5vw;
+    margin-right:2.5vw;
+}
+
+.maincharacter:nth-child(1) {
+    margin-top:5vh;
+}
+
+.maincharacter:nth-child(2) {
+    margin-top:5vh;
+}
+
+.maincharacter:nth-child(3) {
+    margin-top:20vh;
+}
+
+.maincharacter:nth-child(4) {
+    margin-top:130vh;
+}
+
+.maincharacter:nth-child(5) {
+    margin-top:90vh;
+}
+
+.stephen:nth-child(1) {
+    margin-top:55vh;
+}
+
+.stephen:nth-child(2) {
+    margin-top:45vh;
+}
+
+.stephen:nth-child(3) {
+    margin-top:20vh;
+}
+
+.stephen:nth-child(4) {
+    margin-top:70vh;
+}
+
+.stephen:nth-child(6) {
+    margin-top:35vh;
+}
+
+.stephen:nth-child(7) {
+    margin-top:15vh;
+}
+
+.stephen:nth-child(8) {
+    margin-top:20vh;
+}
+
+.stephen:nth-child(9) {
+    margin-top:40vh;
+}
+
+.stephen:nth-child(10) {
+    margin-top:5vh;
+}
+
+.red {
+    color:red;
+}
+
 .book {
     margin-right:5vw;
     width:10vw;
@@ -89,41 +167,31 @@ body{
 
 .convocontainer {
     margin-left:25vw;
+    margin-top:10vh;
+    height:80vh;
+    overflow-y:scroll;
+    overflow-x:hidden;
     display:flex;
     flex-direction:row;
+    border: red solid 2px;
 }
 
 .conversation {
-    margin-top:18vh;
     width:25vw;
-    height:70vh;
-    border:white solid 1px;
-    overflow-y:scroll;
+    height:641vh;
+    border-right:white solid 1px;
+    display:flex;
+    flex-direction:column;
 }
 
 .conversation2 {
     width:25vw;
-    height:70vh;
-    border:white solid 1px;
-    overflow-y:scroll;
-    margin-top:18vh;
-}
-
-.person {
-    width:20vw;
-    height:200vh;
-    border:white solid 1px;
+    height:640vh;
+    border-left:white solid 1px;
     display:flex;
     flex-direction:column;
 }
 
-.person2 {
-    width:20vw;
-    height:200vh;
-    border:white solid 1px;
-    display:flex;
-    flex-direction:column;
-}
 
 .bookshelf {
     width: 30vw;
@@ -141,23 +209,31 @@ body{
 
 .drawer {
     border:white solid 2px;
-    width:30vw;
-    height:20vh;
-    overflow-x:scroll;
+    margin-top:10vh;
+    width:25vw;
+    height:45vh;
+    padding:0;
+    overflow:hidden;
 }
 
-.drawer {
-    border:white solid 2px;
-    width:30vw;
-    height:20vh;
-    overflow-x:scroll;
+.drawer>li {
+    list-style: none;
+    width:25vw;
+    height:15vh;
+    border-bottom: white solid 2px;
 }
 
-.drawer2 {
-    border:white solid 2px;
-    width:30vw;
-    height:20vh;
-    overflow-x:scroll;
+a {
+    text-decoration:none;
+    font-family:'fraktion_regular',sans-serif;
+    font-size:2em;
+    margin-left:5vw;
+    color:black;
+}
+
+.open:hover {
+    background-color:red;
+    transition: 1s ease-in-out;
 }
 
 .letter {
@@ -166,21 +242,4 @@ body{
     font-family:'fraktion_regular',sans-serif;
     color:white;
     font-size:1em;
-}
-
-.clock {
-    width:20vw;
-    height:40vh;
-    border-radius:50%;
-    background-color:pink;
-    margin-left:220vw;
-    margin-top:-50vh;
-}
-
-.clock {
-    width:20vw;
-    height:40vh;
-    border-radius:50%;
-    background-color:pink;
-    margin-left:60vw;
 }
