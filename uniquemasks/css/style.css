@@ -3,7 +3,7 @@ body {
     flex-direction:row;
     width:fit-content;
     margin:0;
-    background-image:url("../images/grid.png");
+    /* background-image:url("../images/grid.png"); */
 }
 
   
@@ -338,5 +338,665 @@ aside {
 
 .titleBoxTwo {
     width:20vw;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-image:none;
+        background-color:red;
+    }
+    .main {
+        display:flex;
+        flex-direction:column;
+        top:0;
+    }
+    
+    .continent {
+        display:flex;
+        flex-direction:row;
+        justify-content:space-around;
+        position:fixed;
+        margin-top:2vh;
+    }
+    
+    h1 {
+        font-family:'resistance';
+        font-size:3em;
+        color: #1355FF;
+        margin-left:2vw;
+        margin-top:10vh;
+        margin-bottom:0;
+        display:block;
+        left:0;
+        top:0;
+    }
+    
+    .subtitle {
+        font-family:arial;
+        color:white;
+        font-size:.8em;
+        font-weight:bold;
+        margin-left:2vw;
+        width:35vw;
+    }
+    
+    aside {
+        width:fit-content;
+        height:fit-content;
+        top:0;
+        margin-top:0;
+        right:0;
+        position:fixed;
+        display:flex;
+        flex-direction:row;
+    }
+    
+    
+    .key {
+        display:flex;
+        flex-direction:column;
+    }
+    
+    .names{
+        opacity:0%;
+    }
+    
+    .names:hover {
+        opacity:100%;
+        transition:.5s ease-in-out;
+    }
+    
+    .names:after {
+        transition:.5s ease-out;
+    }
+    
+    .nametitle {
+        margin-top:4vh;
+        color:white;
+        font-family:arial;
+        font-size:1em;
+        font-weight:bold;
+        margin-right:1vw;
+    }
+    
+    /* .names {
+        margin-top:
+    } */
+    
+    .square {
+        width:4vw;
+        height:4vw;
+        margin-top:2vh;
+    }
+    
+    .square2 {
+        width:10vw;
+        height:10vh;
+        margin-top:2vh;
+    }
+    
+    .crowd {
+        margin-left:2vw;
+        width:120vw;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+    .titleBox {
+        width: 15vw;
+    }
+    
+    .typeBox {
+        display:flex;
+        flex-direction:column;
+        border: white solid 2px;
+        opacity:0%;
+        transition:.5s ease-in-out;
+    }
+    
+    .typeBox2 {
+        width: 17vw;
+        margin-left:6vw;
+        display:flex;
+        flex-direction:column;
+        border: white solid 2px;
+        opacity:0%;
+        transition:.5s ease-in-out;
+    }
+    
+    .description {
+        margin:1vw;
+        font-family:arial;
+        color:white;
+        font-size:.6em;
+    }
+    
+    .titleBox>h2 {
+        pointer-events:none;
+    }
+    
+    .title {
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:.8em;
+        text-align:center;
+        color:white;
+        font-weight:bold;
+    }
+    
+    .title2 {
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:1em;
+        color:white;
+        font-weight:bold;
+    }
+    
+    .person {
+        margin:3vw;
+        display:flex;
+        flex-direction:column;
+        opacity:100%;
+        transition:.5s ease-in-out;
+    }
+    
+    .person:hover {
+        transform:scale(1.3);
+    }
+    
+    .person:hover~.typebox {
+        display:100%;
+    }
+    
+    .face {
+        width:7vw;
+        height:9vh;
+        margin-left:5vw;
+        clip-path:circle(25%);
+    }
+    
+    .icon {
+        width:25vw;
+        height:auto;
+    }
+    
+    .body {
+        width:7vw;
+        height:15vh;
+        margin-top:0;
+        margin-left:5vw;
+    }
+    
+    .keyrow {
+        display:flex;
+        flex-direction:row;
+    }
+    
+    .mouthKey {
+        background: linear-gradient(180deg, #FFAA05 0%, #FFFFFF 100%);
+    }
+    
+    .coutureKey {
+        background:linear-gradient(180deg, #FF4034 0%, #FFC01F 20%, #497CFF 40%, #8EFF59 60%, #FF59C7 80%, #C854FF 100%);
+    }
+    
+    .characterKey {
+        background: linear-gradient(180deg, #ef60ff 0%, #FFFFFF 100%);
+    }
+    
+    .figureKey {
+        background: linear-gradient(180deg, #4d7cff 0%, #FFFFFF 100%);
+    }
+    
+    .detailKey {
+        background: linear-gradient(180deg, #92ff60 0%, #FFFFFF 100%);
+    }
+    
+    .patternKey {
+        background:url(../bodies/patternSquare.jpeg);
+        background-size:4vw 4vw;
+    }
+    
+    .necessityKey {
+        background: linear-gradient(180deg, #1d1d1d 0%, #ffffff 100%);
+    }
+    
+    .statementKey {
+        background: linear-gradient(180deg, #ff0000 0%, #160eff 100%);
+    }
+    
+    .reset {
+        background:url(../images/reset.png);
+        background-size:4vw 4vw;
+    }
+    
+    .frame {
+        bottom:0;
+        right:0;
+        position:fixed;
+        background:url(../images/revert.png);
+        background-size:10vw 10vh;
+    }
+    
+    .frame2 {
+        bottom:0;
+        right:0;
+        position:fixed;
+        background:url(../images/zoom.png);
+        background-size:2vw 2vw;
+    }
+    
+    
+    .flag {
+        width:5vw;
+        height:5vh;
+        background-color:rgb(51, 51, 255);
+    }
+    
+    .Mouth {
+        background-image:url(../bodies/mouthshadow.PNG);
+        background-size: 7vw 15vh;
+    }
+    
+    .Necessity {
+        background-image:url(../bodies/necessityshadow.PNG);
+        background-size: 7vw 15vh;
+    }
+    
+    .Pattern {
+        background-image:url(../bodies/patternshadow.PNG);
+        background-size: 7vw 15vh;
+    }
+    
+    .Character {
+        background-image:url(../bodies/charactershadow.PNG);
+        background-size: 7vw 15vh;
+    }
+    
+    .Statement {
+        background-image:url(../bodies/statementshadow.PNG);
+        background-size: 7vw 15vh;
+    }
+    
+    .Figure {
+        background-image:url(../bodies/figureshadow.PNG);
+        background-size: 7vw 15vh;
+    }
+    
+    .Detail {
+        background-image:url(../bodies/detailshadow.PNG);
+        background-size: 7vw 15vh;
+    }
+    
+    .Couture {
+        background-image:url(../bodies/coutureshadow.PNG);
+        background-size: 7vw 15vh;
+    }
+    .active {
+        opacity:100%;
+    }
+    
+    .hidden {
+        opacity:0%;
+    }
+    
+    .gone {
+        display:none;
+    }
+    
+    .zoom {
+        clip-path:none;
+        width:20vw;
+        height:15vh;
+    }
+    
+    .namerica {
+        background-image:none;
+    }
+    
+    .asia {
+        background-image:none;
+    }
+    
+    .modal {
+        width: 100%;
+        height: 100%;
+        display:fixed;
+        z-index:2;
+        background-color:red;
+    }
+    
+    .titleBoxTwo {
+        width:20vw;
+    }
+}
+
+@media screen and (max-width: 400px){
+    body {
+        background-image:none;
+        background-color:blue;
+    }
+
+    .main {
+        display:flex;
+        flex-direction:column;
+        top:0;
+    }
+    
+    .continent {
+        display:flex;
+        flex-direction:row;
+        width:20vw;
+        justify-content:space-around;
+        position:fixed;
+        margin-top:2vh;
+    }
+    
+    h1 {
+        font-family:'resistance';
+        font-size:4em;
+        color: #1355FF;
+        margin-left:2vw;
+        margin-top:10vh;
+        margin-bottom:0;
+        display:block;
+        left:0;
+        top:0;
+    }
+    
+    .subtitle {
+        font-family:arial;
+        color:white;
+        font-size:.8em;
+        font-weight:bold;
+        margin-left:2vw;
+        width:35vw;
+    }
+    
+    aside {
+        width:fit-content;
+        height:fit-content;
+        top:0;
+        margin-top:0;
+        right:0;
+        position:fixed;
+        display:flex;
+        flex-direction:row;
+    }
+    
+    
+    .key {
+        display:flex;
+        flex-direction:column;
+    }
+    
+    .names{
+        opacity:0%;
+    }
+    
+    .names:hover {
+        opacity:100%;
+        transition:.5s ease-in-out;
+    }
+    
+    .names:after {
+        transition:.5s ease-out;
+    }
+    
+    .nametitle {
+        margin-top:4vh;
+        color:white;
+        font-family:arial;
+        font-size:1em;
+        font-weight:bold;
+        margin-right:1vw;
+    }
+    
+    /* .names {
+        margin-top:
+    } */
+    
+    .square {
+        width:4vw;
+        height:4vw;
+        margin-top:2vh;
+    }
+    
+    .square2 {
+        width:10vw;
+        height:10vh;
+        margin-top:2vh;
+    }
+    
+    .crowd {
+        margin-left:2vw;
+        width:120vw;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+    .titleBox {
+        width: 15vw;
+    }
+    
+    .typeBox {
+        display:flex;
+        flex-direction:column;
+        border: white solid 2px;
+        opacity:0%;
+        transition:.5s ease-in-out;
+    }
+    
+    .typeBox2 {
+        width: 17vw;
+        margin-left:6vw;
+        display:flex;
+        flex-direction:column;
+        border: white solid 2px;
+        opacity:0%;
+        transition:.5s ease-in-out;
+    }
+    
+    .description {
+        margin:1vw;
+        font-family:arial;
+        color:white;
+        font-size:.6em;
+    }
+    
+    .titleBox>h2 {
+        pointer-events:none;
+    }
+    
+    .title {
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:.8em;
+        text-align:center;
+        color:white;
+        font-weight:bold;
+    }
+    
+    .title2 {
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:1em;
+        color:white;
+        font-weight:bold;
+    }
+    
+    .person {
+        margin:3vw;
+        display:flex;
+        flex-direction:column;
+        opacity:100%;
+        transition:.5s ease-in-out;
+    }
+    
+    .person:hover {
+        transform:scale(1.3);
+    }
+    
+    .person:hover~.typebox {
+        display:100%;
+    }
+    
+    .face {
+        width:7vw;
+        height:9vh;
+        margin-left:5vw;
+        clip-path:circle(25%);
+    }
+    
+    .icon {
+        width:25vw;
+        height:auto;
+    }
+    
+    .body {
+        width:7vw;
+        height:15vh;
+        margin-top:0;
+        margin-left:5vw;
+    }
+    
+    .keyrow {
+        display:flex;
+        flex-direction:row;
+    }
+    
+    .mouthKey {
+        background: linear-gradient(180deg, #FFAA05 0%, #FFFFFF 100%);
+    }
+    
+    .coutureKey {
+        background:linear-gradient(180deg, #FF4034 0%, #FFC01F 20%, #497CFF 40%, #8EFF59 60%, #FF59C7 80%, #C854FF 100%);
+    }
+    
+    .characterKey {
+        background: linear-gradient(180deg, #ef60ff 0%, #FFFFFF 100%);
+    }
+    
+    .figureKey {
+        background: linear-gradient(180deg, #4d7cff 0%, #FFFFFF 100%);
+    }
+    
+    .detailKey {
+        background: linear-gradient(180deg, #92ff60 0%, #FFFFFF 100%);
+    }
+    
+    .patternKey {
+        background:url(../bodies/patternSquare.jpeg);
+        background-size:4vw 4vw;
+    }
+    
+    .necessityKey {
+        background: linear-gradient(180deg, #1d1d1d 0%, #ffffff 100%);
+    }
+    
+    .statementKey {
+        background: linear-gradient(180deg, #ff0000 0%, #160eff 100%);
+    }
+    
+    .reset {
+        background:url(../images/reset.png);
+        background-size:4vw 4vw;
+    }
+    
+    .frame {
+        bottom:0;
+        right:0;
+        position:fixed;
+        background:url(../images/revert.png);
+        background-size:10vw 10vh;
+    }
+    
+    .frame2 {
+        bottom:0;
+        right:0;
+        position:fixed;
+        background:url(../images/zoom.png);
+        background-size:2vw 2vw;
+    }
+    
+    
+    .flag {
+        width:5vw;
+        height:5vh;
+        background-color:rgb(51, 51, 255);
+    }
+    
+    .Mouth {
+        background-image:url(../bodies/mouthshadow.PNG);
+        background-size: 7vw 15vh;
+    }
+    
+    .Necessity {
+        background-image:url(../bodies/necessityshadow.PNG);
+        background-size: 7vw 15vh;
+    }
+    
+    .Pattern {
+        background-image:url(../bodies/patternshadow.PNG);
+        background-size: 7vw 15vh;
+    }
+    
+    .Character {
+        background-image:url(../bodies/charactershadow.PNG);
+        background-size: 7vw 15vh;
+    }
+    
+    .Statement {
+        background-image:url(../bodies/statementshadow.PNG);
+        background-size: 7vw 15vh;
+    }
+    
+    .Figure {
+        background-image:url(../bodies/figureshadow.PNG);
+        background-size: 7vw 15vh;
+    }
+    
+    .Detail {
+        background-image:url(../bodies/detailshadow.PNG);
+        background-size: 7vw 15vh;
+    }
+    
+    .Couture {
+        background-image:url(../bodies/coutureshadow.PNG);
+        background-size: 7vw 15vh;
+    }
+    .active {
+        opacity:100%;
+    }
+    
+    .hidden {
+        opacity:0%;
+    }
+    
+    .gone {
+        display:none;
+    }
+    
+    .zoom {
+        clip-path:none;
+        width:20vw;
+        height:15vh;
+    }
+    
+    .namerica {
+        background-image:none;
+    }
+    
+    .asia {
+        background-image:none;
+    }
+    
+    .modal {
+        width: 100%;
+        height: 100%;
+        display:fixed;
+        z-index:2;
+        background-color:red;
+    }
+    
+    .titleBoxTwo {
+        width:20vw;
+    }
 }
 

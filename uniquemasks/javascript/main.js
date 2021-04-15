@@ -108,7 +108,7 @@ function showMasks(){
         mouthFilter.addEventListener("click",function(){
             if (body.classList.contains("Mouth")){
                 person.style.opacity="100%";
-                document.body.style.background="linear-gradient(180deg, rgb(255, 183, 82) 0%, #FFFFFF 100%)"
+                document.body.style.background="linear-gradient(180deg, rgb(255, 183, 82) 0%, #A37604 100%)"
                 subtitle.innerText = "Mask Type: Mouth"
             } else {
                 person.style.opacity="0%";
@@ -134,7 +134,7 @@ function showMasks(){
         characterFilter.addEventListener("click",function(){
             if (body.classList.contains("Character")){
                 person.style.opacity="100%";
-                document.body.style.background="linear-gradient( #C854FF 0%, #FFFFFF 100%)"
+                document.body.style.background="linear-gradient( #C854FF 0%, #7F409C 100%)"
                 subtitle.innerText = "Mask Type: Character"
             } else {
                 person.style.opacity="0%";
@@ -147,7 +147,7 @@ function showMasks(){
         figureFilter.addEventListener("click",function(){
             if (body.classList.contains("Figure")){
                 person.style.opacity="100%";
-                document.body.style.background="linear-gradient(#1355FF 0%, #FFFFFF 100%)"
+                document.body.style.background="linear-gradient(#92B0FF 0%, #2A4DA6 100%)"
                 subtitle.innerText = "Mask Type: Figure"
             } else {
                 person.style.opacity="0%";
@@ -160,7 +160,7 @@ function showMasks(){
         detailFilter.addEventListener("click",function(){
             if (body.classList.contains("Detail")){
                 person.style.opacity="100%";
-                document.body.style.background="linear-gradient(180deg, #97E374 0%, #FFFFFF 100%)"
+                document.body.style.background="linear-gradient(180deg, #97E374 0%, #3B7B1D 100%)"
                 subtitle.innerText = "Mask Type: Detail"
             } else {
                 person.style.opacity="0%";
@@ -174,13 +174,8 @@ function showMasks(){
         patternFilter.addEventListener("click",function(){
             if (body.classList.contains("Pattern")){
                 person.style.opacity="100%";
-                document.body.style.backgroundImage="url('images/bwgrid.png')"
+                document.body.style.background="linear-gradient(180deg, #7A7A7A 7.81%, #545454 22.4%, #828282 38.54%, #4F4E4E 55.73%, #7A7A7A 71.87%, #4F4F4F 92.19%)";
                 subtitle.innerText = "Mask Type: Pattern"
-                typeBox.style.borderColor="black";
-                var title = document.querySelector(".title")
-                title.style.color="black";
-                var description = document.querySelector(".description")
-                description.style.color="black";
             } else {
                 person.style.opacity="0%";
             }
@@ -202,7 +197,7 @@ function showMasks(){
             if (body.classList.contains("Statement")){
                 person.style.opacity="100%";
                 document.body.style.background="none";
-                document.body.style.background="linear-gradient(180deg, rgb(51, 51, 255) 0%, #E70E00 100%)"
+                document.body.style.background="linear-gradient(180deg, #D2372D 0%, rgb(51, 51, 255) 100%)"
                 subtitle.innerText = "Mask Type: Statement"
             } else {
                 person.style.opacity="0%";
