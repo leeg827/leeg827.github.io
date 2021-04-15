@@ -77,7 +77,7 @@ function showMasks(){
 
         var continent = mask.fields.biggerLocation;
         continent.forEach(function(continent){
-            titleBox.classList.add(continent);
+            titleBox.classList.add(continent+"Button");
             person.classList.add(continent);
         });
 
@@ -184,5 +184,15 @@ function showMasks(){
             img.classList.toggle("zoom");
             body.classList.toggle("gone");
             });
-        
+
+        var asiaButton = document.querySelectorAll ('.asiaButton')
+        asiaButton.forEach(function(asiaButton){
+            asiaButton.addEventListener("click",function(){
+                if (person.classList.contains("asia")){
+                    person.style.opacity="100%";
+                } else {
+                    person.style.opacity="0;"
+                }
+            })
+        })
     })};
