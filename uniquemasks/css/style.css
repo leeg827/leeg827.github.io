@@ -1,6 +1,7 @@
 body {
     display:flex;
     flex-direction:row;
+    width:fit-content;
     margin:0;
     background-image:url("../images/graph.png");
 }
@@ -17,6 +18,16 @@ body {
 .main {
     display:flex;
     flex-direction:column;
+    top:0;
+}
+
+.continent {
+    display:flex;
+    flex-direction:row;
+    width:90vw;
+    justify-content:space-around;
+    position:fixed;
+    margin-top:2vh;
 }
 
 h1 {
@@ -24,7 +35,17 @@ h1 {
     font-size:3em;
     color: #1355FF;
     margin-left:2vw;
-;
+    margin-top:10vh;
+    margin-bottom:0;
+}
+
+.subtitle {
+    font-family:arial;
+    color:white;
+    font-size:1em;
+    font-weight:bold;
+    margin-left:2vw;
+    width:35vw;
 }
 
 aside {
@@ -33,7 +54,7 @@ aside {
     top:0;
     margin-top:0;
     right:0;
-    position:sticky;
+    position:fixed;
 }
 
 .square {
@@ -54,6 +75,19 @@ aside {
     width: 15vw;
 }
 
+.typeBox {
+    width: 15vw;
+    display:flex;
+    flex-direction:column;
+}
+
+.description {
+    font-family:arial;
+    color:white;
+    font-size:1em;
+    text-align:center;
+}
+
 .titleBox>h2 {
     pointer-events:none;
 }
@@ -63,12 +97,19 @@ aside {
     font-size:1em;
     text-align:center;
     color:white;
+    font-weight:bold;
 }
 
 .person {
+    margin:6vw;
     display:flex;
     flex-direction:column;
     opacity:100%;
+    transition:.5s ease-in-out;
+}
+
+.person:hover {
+    transform:scale(1.2);
 }
 
 .face {
@@ -94,7 +135,7 @@ aside {
 }
 
 .coutureKey {
-    background-color:aqua;
+    background:linear-gradient(180deg, #FF4034 0%, #FFC01F 20%, #497CFF 40%, #8EFF59 60%, #FF59C7 80%, #C854FF 100%);
 }
 
 .characterKey {
@@ -127,7 +168,8 @@ aside {
 
 .frame {
     bottom:0;
-    position:sticky;
+    right:0;
+    position:fixed;
     background-color:white;
 }
 
@@ -138,42 +180,42 @@ aside {
 }
 
 .Mouth {
-    background-image:url(../bodies/mouth.PNG);
+    background-image:url(../bodies/mouthshadow.PNG);
     background-size: 5vw 20vh;
 }
 
 .Necessity {
-    background-image:url(../bodies/necessity.PNG);
+    background-image:url(../bodies/necessityshadow.PNG);
     background-size: 5vw 20vh;
 }
 
 .Pattern {
-    background-image:url(../bodies/pattern.PNG);
+    background-image:url(../bodies/patternshadow.PNG);
     background-size: 5vw 20vh;
 }
 
 .Character {
-    background-image:url(../bodies/character.PNG);
+    background-image:url(../bodies/charactershadow.PNG);
     background-size: 5vw 20vh;
 }
 
 .Statement {
-    background-image:url(../bodies/statement.PNG);
+    background-image:url(../bodies/statementshadow.PNG);
     background-size: 5vw 20vh;
 }
 
 .Figure {
-    background-image:url(../bodies/figure.PNG);
+    background-image:url(../bodies/figureshadow.PNG);
     background-size: 5vw 20vh;
 }
 
 .Detail {
-    background-image:url(../bodies/detail.PNG);
+    background-image:url(../bodies/detailshadow.PNG);
     background-size: 5vw 20vh;
 }
 
 .Couture {
-    background-image:url(../bodies/couture.PNG);
+    background-image:url(../bodies/coutureshadow.PNG);
     background-size: 5vw 20vh;
 }
 
@@ -193,7 +235,6 @@ aside {
     clip-path:none;
     width:14vw;
     height:20vh;
-    margin:0;
 }
 
 .namerica {
@@ -203,3 +244,16 @@ aside {
 .asia {
     background-image:none;
 }
+
+.modal {
+    width: 100%;
+    height: 100%;
+    display:fixed;
+    z-index:2;
+    background-color:red;
+}
+
+.titleBoxTwo {
+    width:20vw;
+}
+

@@ -75,17 +75,31 @@ function showMasks(){
         h2.innerText = mask.fields.continent;
         titleBox.appendChild(h2);
 
+        var typeBox = document.createElement ("div");
+        typeBox.classList.add("typeBox");
+        person.appendChild(typeBox);
+
+        var typeName = document.createElement("p")
+        typeName.classList.add("description");
+        typeName.innerText = "Type: "+mask.fields.category[0];
+        typeBox.appendChild(typeName);
+        
+
         var continent = mask.fields.biggerLocation;
         continent.forEach(function(continent){
             titleBox.classList.add(continent+"Button");
             person.classList.add(continent);
         });
 
+        var main = document.querySelectorAll("h1")
+        var subtitle = document.querySelector(".subtitle");
+
         var mouthFilter = document.querySelector('.mouthKey')
         mouthFilter.addEventListener("click",function(){
             if (body.classList.contains("Mouth")){
                 person.style.opacity="100%";
                 document.body.style.background="linear-gradient(180deg, rgb(255, 183, 82) 0%, #FFFFFF 100%)"
+                subtitle.innerText = "Mask Type: Mouth"
             } else {
                 person.style.opacity="0%";
             }
@@ -97,7 +111,8 @@ function showMasks(){
         coutureFilter.addEventListener("click",function(){
             if (body.classList.contains("Couture")){
                 person.style.opacity="100%";
-                document.body.style.background="linear-gradient(180deg, rgb(255, 183, 82) 0%, #FFFFFF 100%)"
+                document.body.style.background="linear-gradient(180deg, #FF4034 0%, #FFC01F 20%, #497CFF 40%, #8EFF59 60%, #FF59C7 80%, #C854FF 100%)"
+                subtitle.innerText = "Mask Type: Couture"
             } else {
                 person.style.opacity="0%";
             }
@@ -109,7 +124,8 @@ function showMasks(){
         characterFilter.addEventListener("click",function(){
             if (body.classList.contains("Character")){
                 person.style.opacity="100%";
-                document.body.style.background="linear-gradient(180deg, rgb(255, 183, 82) 0%, #FFFFFF 100%)"
+                document.body.style.background="linear-gradient(180deg, C854FF 0%,, #FFFFFF 100%)"
+                subtitle.innerText = "Mask Type: Character"
             } else {
                 person.style.opacity="0%";
             }
@@ -122,6 +138,7 @@ function showMasks(){
             if (body.classList.contains("Figure")){
                 person.style.opacity="100%";
                 document.body.style.background="linear-gradient(180deg, rgb(255, 183, 82) 0%, #FFFFFF 100%)"
+                subtitle.innerText = "Mask Type: Figure"
             } else {
                 person.style.opacity="0%";
             }
@@ -134,6 +151,7 @@ function showMasks(){
             if (body.classList.contains("Detail")){
                 person.style.opacity="100%";
                 document.body.style.background="linear-gradient(180deg, rgb(255, 183, 82) 0%, #FFFFFF 100%)"
+                subtitle.innerText = "Mask Type: Detail"
             } else {
                 person.style.opacity="0%";
             }
@@ -145,7 +163,8 @@ function showMasks(){
         patternFilter.addEventListener("click",function(){
             if (body.classList.contains("Pattern")){
                 person.style.opacity="100%";
-                document.body.style.background="linear-gradient(180deg, rgb(255, 183, 82) 0%, #FFFFFF 100%)"
+                main.style.color="black";
+                subtitle.innerText = "Mask Type: Pattern"
             } else {
                 person.style.opacity="0%";
             }
@@ -155,7 +174,8 @@ function showMasks(){
         necessityFilter.addEventListener("click",function(){
             if (body.classList.contains("Necessity")){
                 person.style.opacity="100%";
-                document.body.style.background="linear-gradient(180deg, rgb(255, 183, 82) 0%, #FFFFFF 100%)"
+                document.body.style.background="linear-gradient(180deg, #676767 0%, #FFFFFF 100%)"
+                subtitle.innerText = "Mask Type: Necessity"
             } else {
                 person.style.opacity="0%";
             }
@@ -164,6 +184,73 @@ function showMasks(){
         var statementFilter = document.querySelector('.statementKey')
         statementFilter.addEventListener("click",function(){
             if (body.classList.contains("Statement")){
+                person.style.opacity="100%";
+                document.body.style.background="none";
+                document.body.style.background="linear-gradient(180deg, rgb(51, 51, 255) 0%, #E70E00 100%)"
+                subtitle.innerText = "Mask Type: Statement"
+            } else {
+                person.style.opacity="0%";
+            }
+        });
+
+        var asiaFilter = document.querySelector('.asia')
+        asiaFilter.addEventListener("click",function(){
+            if (person.classList.contains("asia")){
+                person.style.opacity="100%";
+                document.body.style.background="none";
+                document.body.style.background="linear-gradient(180deg, rgb(51, 51, 255) 0%, #FFFFFF 100%)"
+            } else {
+                person.style.opacity="0%";
+            }
+        });
+
+        var europeFilter = document.querySelector('.europe')
+        europeFilter.addEventListener("click",function(){
+            if (person.classList.contains("europe")){
+                person.style.opacity="100%";
+                document.body.style.background="none";
+                document.body.style.background="linear-gradient(180deg, rgb(51, 51, 255) 0%, #FFFFFF 100%)"
+            } else {
+                person.style.opacity="0%";
+            }
+        });
+
+        var northAmericaFilter = document.querySelector('.namerica')
+        northAmericaFilter.addEventListener("click",function(){
+            if (person.classList.contains("namerica")){
+                person.style.opacity="100%";
+                document.body.style.background="none";
+                document.body.style.background="linear-gradient(180deg, rgb(51, 51, 255) 0%, #FFFFFF 100%)"
+            } else {
+                person.style.opacity="0%";
+            }
+        });
+
+        var southAmericaFilter = document.querySelector('.samerica')
+        southAmericaFilter.addEventListener("click",function(){
+            if (person.classList.contains("samerica")){
+                person.style.opacity="100%";
+                document.body.style.background="none";
+                document.body.style.background="linear-gradient(180deg, rgb(51, 51, 255) 0%, #FFFFFF 100%)"
+            } else {
+                person.style.opacity="0%";
+            }
+        });
+
+        var australiaFilter = document.querySelector('.australia')
+        australiaFilter.addEventListener("click",function(){
+            if (person.classList.contains("australia")){
+                person.style.opacity="100%";
+                document.body.style.background="none";
+                document.body.style.background="linear-gradient(180deg, rgb(51, 51, 255) 0%, #FFFFFF 100%)"
+            } else {
+                person.style.opacity="0%";
+            }
+        });
+
+        var africaFilter = document.querySelector('.africa')
+        africaFilter.addEventListener("click",function(){
+            if (person.classList.contains("africa")){
                 person.style.opacity="100%";
                 document.body.style.background="none";
                 document.body.style.background="linear-gradient(180deg, rgb(51, 51, 255) 0%, #FFFFFF 100%)"
@@ -183,16 +270,16 @@ function showMasks(){
         frame.addEventListener("click",function(){
             img.classList.toggle("zoom");
             body.classList.toggle("gone");
+            titleBox.classList.toggle("titleBoxTwo");
             });
 
-        var asiaButton = document.querySelectorAll ('.asiaButton')
-        asiaButton.forEach(function(asiaButton){
-            asiaButton.addEventListener("click",function(){
-                if (person.classList.contains("asia")){
-                    person.style.opacity="100%";
+        titleBox.addEventListener("click", () => {
+            document.querySelectorAll(".person").forEach((person) => {
+                if (person.classList.contains(continent)) {
+                    person.style.opacity = "1";
                 } else {
-                    person.style.opacity="0;"
+                     person.style.opacity = "0";
                 }
-            })
-        })
+            });
+        });
     })};
