@@ -209,7 +209,7 @@ function showMasks(){
             if (person.classList.contains("asia")){
                 person.style.opacity="100%";
                 document.body.style.background="none";
-                document.body.style.background="linear-gradient(180deg, rgb(51, 51, 255) 0%, #FFFFFF 100%)"
+                document.body.style.backgroundImage="url('images/Asia.PNG')"
                 subtitle.innerText = "Continent : Asia"
             } else {
                 person.style.opacity="0%";
@@ -221,7 +221,7 @@ function showMasks(){
             if (person.classList.contains("europe")){
                 person.style.opacity="100%";
                 document.body.style.background="none";
-                document.body.style.background="linear-gradient(180deg, rgb(51, 51, 255) 0%, #FFFFFF 100%)"
+                document.body.style.backgroundImage="url('images/Europe.PNG')"
                 subtitle.innerText = "Continent : Europe"
             } else {
                 person.style.opacity="0%";
@@ -233,7 +233,7 @@ function showMasks(){
             if (person.classList.contains("namerica")){
                 person.style.opacity="100%";
                 document.body.style.background="none";
-                document.body.style.background="linear-gradient(180deg, rgb(51, 51, 255) 0%, #FFFFFF 100%)"
+                document.body.style.backgroundImage="url('images/northamerica.PNG')"
                 subtitle.innerText = "Continent : North America"
             } else {
                 person.style.opacity="0%";
@@ -245,7 +245,7 @@ function showMasks(){
             if (person.classList.contains("samerica")){
                 person.style.opacity="100%";
                 document.body.style.background="none";
-                document.body.style.background="linear-gradient(180deg, rgb(51, 51, 255) 0%, #FFFFFF 100%)"
+                document.body.style.backgroundImage="url('images/southamerica.PNG')"
                 subtitle.innerText = "Continent : South America"
             } else {
                 person.style.opacity="0%";
@@ -257,7 +257,7 @@ function showMasks(){
             if (person.classList.contains("australia")){
                 person.style.opacity="100%";
                 document.body.style.background="none";
-                document.body.style.background="linear-gradient(180deg, rgb(51, 51, 255) 0%, #FFFFFF 100%)"
+                document.body.style.backgroundImage="url('images/australia.PNG')"
                 subtitle.innerText = "Continent : Australia"
             } else {
                 person.style.opacity="0%";
@@ -269,7 +269,7 @@ function showMasks(){
             if (person.classList.contains("africa")){
                 person.style.opacity="100%";
                 document.body.style.background="none";
-                document.body.style.background="linear-gradient(180deg, rgb(51, 51, 255) 0%, #FFFFFF 100%)"
+                document.body.style.backgroundImage="url('images/Africa.PNG')"
                 subtitle.innerText = "Continent : Africa"
             } else {
                 person.style.opacity="0%";
