@@ -83,6 +83,16 @@ function showMasks(){
         typeName.classList.add("description");
         typeName.innerText = "Type: "+mask.fields.category[0];
         typeBox.appendChild(typeName);
+
+        var typeLocation =document.createElement("p")
+        typeLocation.classList.add("description");
+        typeLocation.innerText = "Location: "+mask.fields.city;
+        typeBox.appendChild(typeLocation);
+
+        var typeDescription =document.createElement("p")
+        typeDescription.classList.add("description");
+        typeDescription.innerText = "Location: "+mask.fields.description;
+        typeBox.appendChild(typeDescription);
         
 
         var continent = mask.fields.biggerLocation;
@@ -124,7 +134,7 @@ function showMasks(){
         characterFilter.addEventListener("click",function(){
             if (body.classList.contains("Character")){
                 person.style.opacity="100%";
-                document.body.style.background="linear-gradient(180deg, C854FF 0%,, #FFFFFF 100%)"
+                document.body.style.background="linear-gradient( #C854FF 0%, #FFFFFF 100%)"
                 subtitle.innerText = "Mask Type: Character"
             } else {
                 person.style.opacity="0%";
@@ -137,7 +147,7 @@ function showMasks(){
         figureFilter.addEventListener("click",function(){
             if (body.classList.contains("Figure")){
                 person.style.opacity="100%";
-                document.body.style.background="linear-gradient(180deg, rgb(255, 183, 82) 0%, #FFFFFF 100%)"
+                document.body.style.background="linear-gradient(#1355FF 0%, #FFFFFF 100%)"
                 subtitle.innerText = "Mask Type: Figure"
             } else {
                 person.style.opacity="0%";
@@ -150,7 +160,7 @@ function showMasks(){
         detailFilter.addEventListener("click",function(){
             if (body.classList.contains("Detail")){
                 person.style.opacity="100%";
-                document.body.style.background="linear-gradient(180deg, rgb(255, 183, 82) 0%, #FFFFFF 100%)"
+                document.body.style.background="linear-gradient(180deg, #97E374 0%, #FFFFFF 100%)"
                 subtitle.innerText = "Mask Type: Detail"
             } else {
                 person.style.opacity="0%";
@@ -159,12 +169,18 @@ function showMasks(){
 
         //filter by pattern
 
+
         var patternFilter = document.querySelector('.patternKey')
         patternFilter.addEventListener("click",function(){
             if (body.classList.contains("Pattern")){
                 person.style.opacity="100%";
-                main.style.color="black";
+                document.body.style.backgroundImage="url('images/bwgrid.png')"
                 subtitle.innerText = "Mask Type: Pattern"
+                typeBox.style.borderColor="black";
+                var title = document.querySelector(".title")
+                title.style.color="black";
+                var description = document.querySelector(".description")
+                description.style.color="black";
             } else {
                 person.style.opacity="0%";
             }
@@ -263,14 +279,16 @@ function showMasks(){
         reset.addEventListener("click",function(){
             person.style.opacity="100%";
             document.body.style.background="none";
-            document.body.style.backgroundImage="url('images/graph.png')"
+            document.body.style.backgroundImage="url('images/grid.png')"
             });
 
         var frame = document.querySelector('.frame')
         frame.addEventListener("click",function(){
+            frame.classList.toggle("frame2")
             img.classList.toggle("zoom");
             body.classList.toggle("gone");
             titleBox.classList.toggle("titleBoxTwo");
+            typeBox.classList.toggle("typeBox2")
             });
 
         titleBox.addEventListener("click", () => {
@@ -282,4 +300,10 @@ function showMasks(){
                 }
             });
         });
+
+        person.addEventListener("click",()=>{
+            document.querySelectorAll(".typeBox").forEach((typeBox)=>{
+                typeBox.classList.toggle("active");
+            })
+        })
     })};
