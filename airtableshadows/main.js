@@ -41,6 +41,10 @@ function consolelogShadows() {
 function showShadows() {
     console.log("showShadows()");
     shadows.forEach((shadow) => {
+        var shadowPicture = document.createElement("img");
+        shadowPicture.src= shadow.fields.Photo[0].url;
+        document.body.appendChild(shadowPicture);
+        
         const h2 = document.createElement("h2");
         h2.innerText= shadow.fields.Title;
         document.body.appendChild(h2);

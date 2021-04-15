@@ -1,0 +1,205 @@
+body {
+    display:flex;
+    flex-direction:row;
+    margin:0;
+    background-image:url("../images/graph.png");
+}
+
+  
+@font-face {    
+    font-family: 'resistance';
+    src: url(../resistancefont/resistance_generale-webfont.woff) format('woff'),
+    url(../resistancefont/resistance_generale-webfont.woff) format('woff'),;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.main {
+    display:flex;
+    flex-direction:column;
+}
+
+h1 {
+    font-family:'resistance';
+    font-size:3em;
+    color: #1355FF;
+    margin-left:2vw;
+;
+}
+
+aside {
+    width:5vw;
+    height:fit-content;
+    top:0;
+    margin-top:0;
+    right:0;
+    position:sticky;
+}
+
+.square {
+    width:2vw;
+    height:2vw;
+    justify-content:center;
+    margin-top:2vh;
+}
+
+.crowd {
+    margin-left:2vw;
+    width:120vw;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.titleBox {
+    width: 15vw;
+}
+
+.titleBox>h2 {
+    pointer-events:none;
+}
+
+.title {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:1em;
+    text-align:center;
+    color:white;
+}
+
+.person {
+    display:flex;
+    flex-direction:column;
+    opacity:100%;
+}
+
+.face {
+    width:9vw;
+    height:12vh;
+    margin-left:3vw;
+    clip-path:circle(25%);
+}
+
+.icon {
+    width:25vw;
+    height:auto;
+}
+
+.body {
+    width:5vw;
+    height:20vh;
+    margin-left:5vw;
+}
+
+.mouthKey {
+    background: linear-gradient(180deg, #FFAA05 0%, #FFFFFF 100%);
+}
+
+.coutureKey {
+    background-color:aqua;
+}
+
+.characterKey {
+    background-color: teal;
+}
+
+.figureKey {
+    background-color: tomato;
+}
+
+.detailKey {
+    background-color: thistle;
+}
+
+.patternKey {
+    background-color: violet;
+}
+
+.necessityKey {
+    background-color:black;
+}
+
+.statementKey {
+    background-color:green;
+}
+
+.reset {
+    border: yellowgreen solid 3px;
+}
+
+.frame {
+    bottom:0;
+    position:sticky;
+    background-color:white;
+}
+
+.flag {
+    width:5vw;
+    height:5vh;
+    background-color:rgb(51, 51, 255);
+}
+
+.Mouth {
+    background-image:url(../bodies/mouth.PNG);
+    background-size: 5vw 20vh;
+}
+
+.Necessity {
+    background-image:url(../bodies/necessity.PNG);
+    background-size: 5vw 20vh;
+}
+
+.Pattern {
+    background-image:url(../bodies/pattern.PNG);
+    background-size: 5vw 20vh;
+}
+
+.Character {
+    background-image:url(../bodies/character.PNG);
+    background-size: 5vw 20vh;
+}
+
+.Statement {
+    background-image:url(../bodies/statement.PNG);
+    background-size: 5vw 20vh;
+}
+
+.Figure {
+    background-image:url(../bodies/figure.PNG);
+    background-size: 5vw 20vh;
+}
+
+.Detail {
+    background-image:url(../bodies/detail.PNG);
+    background-size: 5vw 20vh;
+}
+
+.Couture {
+    background-image:url(../bodies/couture.PNG);
+    background-size: 5vw 20vh;
+}
+
+.active {
+    opacity:100%;
+}
+
+.hidden {
+    opacity:0%;
+}
+
+.gone {
+    display:none;
+}
+
+.zoom {
+    clip-path:none;
+    width:14vw;
+    height:20vh;
+    margin:0;
+}
+
+.namerica {
+    background-image:none;
+}
+
+.asia {
+    background-image:none;
+}
