@@ -210,6 +210,7 @@ function showMasks(){
                 person.style.opacity="100%";
                 document.body.style.background="none";
                 document.body.style.background="linear-gradient(180deg, rgb(51, 51, 255) 0%, #FFFFFF 100%)"
+                subtitle.innerText = "Continent : Asia"
             } else {
                 person.style.opacity="0%";
             }
@@ -221,6 +222,7 @@ function showMasks(){
                 person.style.opacity="100%";
                 document.body.style.background="none";
                 document.body.style.background="linear-gradient(180deg, rgb(51, 51, 255) 0%, #FFFFFF 100%)"
+                subtitle.innerText = "Continent : Europe"
             } else {
                 person.style.opacity="0%";
             }
@@ -232,6 +234,7 @@ function showMasks(){
                 person.style.opacity="100%";
                 document.body.style.background="none";
                 document.body.style.background="linear-gradient(180deg, rgb(51, 51, 255) 0%, #FFFFFF 100%)"
+                subtitle.innerText = "Continent : North America"
             } else {
                 person.style.opacity="0%";
             }
@@ -243,6 +246,7 @@ function showMasks(){
                 person.style.opacity="100%";
                 document.body.style.background="none";
                 document.body.style.background="linear-gradient(180deg, rgb(51, 51, 255) 0%, #FFFFFF 100%)"
+                subtitle.innerText = "Continent : South America"
             } else {
                 person.style.opacity="0%";
             }
@@ -254,6 +258,7 @@ function showMasks(){
                 person.style.opacity="100%";
                 document.body.style.background="none";
                 document.body.style.background="linear-gradient(180deg, rgb(51, 51, 255) 0%, #FFFFFF 100%)"
+                subtitle.innerText = "Continent : Australia"
             } else {
                 person.style.opacity="0%";
             }
@@ -265,6 +270,7 @@ function showMasks(){
                 person.style.opacity="100%";
                 document.body.style.background="none";
                 document.body.style.background="linear-gradient(180deg, rgb(51, 51, 255) 0%, #FFFFFF 100%)"
+                subtitle.innerText = "Continent : Africa"
             } else {
                 person.style.opacity="0%";
             }
@@ -275,6 +281,7 @@ function showMasks(){
             person.style.opacity="100%";
             document.body.style.background="none";
             document.body.style.backgroundImage="url('images/grid.png')"
+            subtitle.innerText = "In a world seperated by coronavirus, can we still find commonalities through our masks?"
             });
 
         var frame = document.querySelector('.frame')

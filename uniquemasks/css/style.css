@@ -3,7 +3,7 @@ body {
     flex-direction:row;
     width:fit-content;
     margin:0;
-    /* background-image:url("../images/grid.png"); */
+    background-image:url("../images/grid.png");
 }
 
   
@@ -687,7 +687,7 @@ aside {
     }
 }
 
-@media screen and (min-width: 400px){
+@media screen and (max-width: 400px){
     body {
         background-image:none;
         background-color:blue;
