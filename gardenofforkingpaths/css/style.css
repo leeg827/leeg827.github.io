@@ -31,7 +31,9 @@ body {
     
 }
 
-
+audio {
+    opacity:0;
+}
 
 .grid-item:nth-child(1) { animation-delay: .5s;}
 .grid-item:nth-child(3) { animation-delay: .3s;}
