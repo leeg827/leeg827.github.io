@@ -14,7 +14,7 @@ body {
 .grid-item {
     width:25vw;
     height:100;
-    border: 5px solid rgb(244, 57, 57);
+    border: 5px solid red;
     animation: spaceboots .8s infinite linear;
     mix-blend-mode: lighten;
     display:flex;
@@ -27,7 +27,7 @@ body {
     font-size:5em;
     text-decoration: none;
     margin-top:-.2em;
-    color:rgb(255, 50, 50);
+    color:red;
     
 }
 

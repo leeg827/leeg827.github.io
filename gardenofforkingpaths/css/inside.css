@@ -176,6 +176,27 @@ body{
     border: red solid 2px;
 }
 
+.convocontainer::-webkit-scrollbar{
+    width:.75vw;
+    border-left: red solid 2px;
+}
+
+.convocontainer::-webkit-scrollbar-track {
+    background:red;
+}
+
+.convocontainer::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background:transparent;
+}
+
+.convocontainer::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    background:red;
+}
+
 .conversation {
     width:25vw;
     height:641vh;
@@ -248,7 +269,7 @@ a {
     text-decoration:none;
     font-family:'fraktion_regular',sans-serif;
     font-size:2em;
-    margin-left:5vw;
+    margin-left:3vw;
     color:black;
 }
 

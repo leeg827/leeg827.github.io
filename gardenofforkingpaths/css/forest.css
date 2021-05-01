@@ -103,7 +103,29 @@ a {
     display:flex;
     flex-direction:column;
     overflow-y:scroll;
+    overflow-x:hidden;
 }
+
+.container::-webkit-scrollbar{
+    width:.75vw;
+}
+
+.container::-webkit-scrollbar-track {
+    background:red;
+}
+
+.container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background:transparent;
+}
+
+.container::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    background:red;
+}
+
 
 .container-item {
     width:40vw;
@@ -189,6 +211,28 @@ a {
     display:flex;
     flex-direction:column;
     overflow-y:scroll;
+    overflow-x:hidden;
+}
+
+.letter::-webkit-scrollbar{
+    width:1vw;
+    border-left: red solid 2px;
+}
+
+.letter::-webkit-scrollbar-track {
+    background:red;
+}
+
+.letter::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background:transparent;
+}
+
+.letter::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    background:red;
 }
 
 .letter-item {
