@@ -162,7 +162,7 @@ p {
     width:380px;
     font-family:'fraktion_regular',sans-serif;
     font-size:1.2em;
-    margin: 0px;
+    margin-top: 2vh;
     color:rgb(255, 255, 255);
 }
 
@@ -298,7 +298,7 @@ a {
     flex-direction:column;
     justify-content:space-around;
     width: 21vw;
-    height: 53vh;
+    height:50vh;
     margin:0;
 }
 
@@ -327,5 +327,8 @@ hr {
     margin:0;
 }
 
+.flex-item {
+    height:50vh;
+}
 
 
