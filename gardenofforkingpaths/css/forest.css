@@ -36,6 +36,31 @@ body {
     background-color:black;
 }
 
+body::-webkit-scrollbar{
+    width:.75vw;
+}
+
+body::-webkit-scrollbar:horizontal{
+    height:1vh;
+}
+
+body::-webkit-scrollbar-track {
+    background:red;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background:transparent;
+}
+
+body::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    box-shadow: inset 0 0 .5vw red;
+    background:white;
+    transition:ease-in-out .5s;
+}
+
 .grid {
     display:grid;
     grid-template-columns: 30vw 40vw 30vw 30vw;
@@ -50,11 +75,11 @@ body {
 }
 
 .verticalombre {
-    background: linear-gradient(180deg, #FF5858 0%, #f1c1c1 100%);
+    background: linear-gradient(180deg, red 0%, #f1c1c1 100%);
 }
 
 .horizontalombre {
-    background: linear-gradient(90deg, #FF5858 0%, #DA9898 100%);
+    background: linear-gradient(90deg, red 0%, #DA9898 100%);
 }
 
 .square {
@@ -99,7 +124,7 @@ a {
     margin-top:5vh;
     width:45vw;
     height:90vh;
-    border:pink solid 2px;
+    border:white solid 2px;
     display:flex;
     flex-direction:column;
     overflow-y:scroll;
@@ -133,13 +158,13 @@ a {
 }
 
 .gate {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.07%, rgba(194, 104, 104, 0.761556) 55.39%, #FF5F5F 81.04%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.07%, rgba(194, 104, 104, 0.761556) 55.39%, red 81.04%);
 }
 
 .doors {
     width:40vw;
     height:70vh;
-    border:hotpink solid 2px;
+    border:red solid 2px;
     display:flex;
     flex-direction:row;
     overflow:hidden;
@@ -206,8 +231,8 @@ a {
 .letter{
     width:50vw;
     height:90vh;
-    border:pink solid 2px;
-    background:linear-gradient(180deg, #FF5858 0%, #f1c1c1 100%);
+    border:white solid 2px;
+    background:linear-gradient(180deg, red 0%, black 100%);
     display:flex;
     flex-direction:column;
     overflow-y:scroll;
@@ -216,11 +241,7 @@ a {
 
 .letter::-webkit-scrollbar{
     width:1vw;
-    border-left: red solid 2px;
-}
-
-.letter::-webkit-scrollbar-track {
-    background:red;
+    border-left: white solid 2px;
 }
 
 .letter::-webkit-scrollbar-track {
@@ -230,6 +251,7 @@ a {
 }
 
 .letter::-webkit-scrollbar-thumb {
+    height:2vh;
     border-radius: 10px;
     box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
     background:red;

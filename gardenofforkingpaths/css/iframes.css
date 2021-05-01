@@ -37,24 +37,24 @@ body {
 
 
 .call {
-    width:460px;
-    margin-top:0px;
-    margin-left:1vw;
-    font-family:'fraktion_regular',sans-serif;
-    font-size:1.5em;
-    color:rgb(255, 255, 255);
+    width: 32vw;
+    margin-top: 0px;
+    margin-left: 1vw;
+    font-family: 'fraktion_regular',sans-serif;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
 }
 
 
 #first {
-    margin:0px;
-    width:500px;
-    height:2000px;
+    margin: 0px;
+    width: 35vw;
+    height: 265vh;
     background: linear-gradient(180deg,red 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 #second {
-    margin-top:700px;
+    margin-top:93vh;
 }
 
 .red {
@@ -67,12 +67,12 @@ body {
 
 
 #door {
-    width:490px;
-    height:70vh;
-    border:white solid 2px;
-    overflow-x:hidden;
-    margin-left:450px;
-    margin-top:100px;
+    width: 34vw;
+    height: 70vh;
+    border: white solid 2px;
+    overflow-x: hidden;
+    margin-left: 32vw;
+    margin-top: 13vh;
 }
 
 #door::-webkit-scrollbar {
@@ -162,7 +162,7 @@ p {
     width:380px;
     font-family:'fraktion_regular',sans-serif;
     font-size:1.2em;
-    margin: 20px auto;
+    margin: 0px;
     color:rgb(255, 255, 255);
 }
 
@@ -292,23 +292,40 @@ a {
     width:200%;
 }
 
-.pocket>p{
+.pocket {
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    width: 21vw;
+    height: 53vh;
+    margin:0;
+}
+
+.pocket>li{
 opacity:0;
-margin-left:1vw;
-margin-top:5vh;
-margin-bottom:2vh;
 cursor: pointer;
 }
 
-.pocket>p:hover{
+.pocket>li>div{
+width: 21vw;
+text-align:center;
+font-family:'fraktion_regular',sans-serif;
+font-size:1.2em;
+margin: 0px;
+color:rgb(255, 255, 255);
+}
+
+.pocket>li:hover{
 opacity:100;
 transition-duration:1s;
 cursor: pointer;
 }
 
-.revolver{
-  color:#ff4a4a;
-  cursor:pointer;
+hr {
+    width:21vw;
+    margin:0;
 }
+
 
 

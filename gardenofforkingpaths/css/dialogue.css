@@ -12,7 +12,7 @@ body {
   
 
 .container {
-    border:pink solid 2px;
+    border:white solid 2px;
     width:40vw;
     height:90vh;
     margin-left:30vw;
@@ -61,7 +61,7 @@ body {
     height:20vh;
     margin:0;
     font-family:'fraktion_regular',sans-serif;
-    border:pink solid 2px;
+    border:red solid 2px;
     color:white;
 }
 
@@ -73,12 +73,12 @@ a{
 a:hover {
     text-decoration:none;
     font-family:'fraktion_regular',sans-serif;
-    background:linear-gradient(180deg, #ff9595 0%, #FFFFFF 100%);
+    background:linear-gradient(180deg, red 0%, black 100%);
     transition:ease-in-out 1s;
 }
 
 a>li:hover {
-    color:red;
+    color:black;
 }
 
 .link {

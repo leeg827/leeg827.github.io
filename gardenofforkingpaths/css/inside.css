@@ -20,13 +20,13 @@ body{
     height:90vh;
     margin-top:5vh;
     margin-left:15vw;
-    border:pink solid 2px;
+    border:white solid 2px;
 }
 
 .libraryrow {
     height:30vh;
     width:70vw;
-    border-bottom:pink solid 2px;
+    border-bottom:white solid 2px;
     display:flex;
     flex-direction:row;
     justify-content:space-between;
@@ -126,7 +126,7 @@ body{
     margin-right:5vw;
     width:10vw;
     height:30vh;
-    background: linear-gradient(180deg, #FFAB2E 0%, #906809 100%);
+    background: linear-gradient(180deg, red 0%, #906809 100%);
 }
 
 
@@ -134,14 +134,14 @@ body{
     margin-left:5vw;
     width:10vw;
     height:30vh;
-    background: linear-gradient(180deg, #FF2E47 0%, #FFC9C9 100%);
+    background: linear-gradient(180deg, red 0%, #FFC9C9 100%);
 }
 
 .book3{
     margin-left:5vw;
     width:10vw;
     height:30vh;
-    background: linear-gradient(180deg, #2E36FF 0%, #C9CEFF 96.35%);
+    background: linear-gradient(180deg, red 0%, #C9CEFF 96.35%);
 }
 
 .recordplayer{
