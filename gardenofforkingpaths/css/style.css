@@ -66,3 +66,24 @@ p{
     width:500px;
     text-align:center;
 }
+
+@media screen and (max-width: 400px){
+   body {
+       background:red;
+   }
+}
+
+@media screen and (max-width: 400px){
+    body {
+        background:blue;
+    }
+
+    .grid-container {
+        display:flex;
+        flex-direction:column;
+        justify-items:center;
+        margin-top:3vh;
+    }
+ }
+
+ 

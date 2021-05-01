@@ -37,12 +37,12 @@ body {
 }
 
 #door {
-    width:490px;
+    width:34vw;
     height:70vh;
     border:red solid 2px;
     overflow-x:hidden;
-    margin-left:450px;
-    margin-top:100px;
+    margin-left:31vw;
+    margin-top:13.5vh;
 }
 
 #door::-webkit-scrollbar{
@@ -72,8 +72,8 @@ body {
 
 .white {
     color:white;
-    margin-left:2vw;
-    width:460px;
+    margin-left:1vw;
+    width:32vw;
     font-family:'fraktion_regular',sans-serif;
     font-size:2em;
 }
