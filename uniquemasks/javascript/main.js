@@ -291,6 +291,7 @@ function showMasks(){
             body.classList.toggle("gone");
             titleBox.classList.toggle("titleBoxTwo");
             typeBox.classList.toggle("typeBox2")
+            person.classList.toggle("nomargin")
             });
 
         titleBox.addEventListener("click", () => {

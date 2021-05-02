@@ -107,10 +107,10 @@ aside {
 }
 
 .crowd {
-    margin-left:2vw;
-    width:120vw;
+    margin-right:2vw;
+    width:70vw;
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .titleBox {
@@ -172,7 +172,7 @@ aside {
 }
 
 .person {
-    margin:6vw;
+    margin:5vw;
     display:flex;
     flex-direction:column;
     opacity:100%;
@@ -192,6 +192,7 @@ aside {
     height:12vh;
     margin-left:3vw;
     clip-path:circle(25%);
+    background-size:cover;
 }
 
 .icon {
@@ -349,6 +350,10 @@ aside {
     width:20vw;
 }
 
+.nomargin {
+    margin:2vw;
+}
+
 @media screen and (max-width: 768px) {
     body {
         background-image:none;
@@ -446,15 +451,14 @@ aside {
     
     .crowd {
         margin-left:2vw;
-        width:120vw;
+        width:90vw;
         display:grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     
     .titleBox {
         width: 15vw;
     }
-    
     .typeBox {
         display:flex;
         flex-direction:column;
@@ -787,9 +791,9 @@ aside {
     
     .crowd {
         margin-left:2vw;
-        width:120vw;
+        width:90vw;
         display:grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     
     .titleBox {
