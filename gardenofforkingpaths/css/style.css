@@ -67,15 +67,21 @@ p{
     text-align:center;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 1024px){
+    body {
+        background-color:pink;
+    }
+ }
+
+@media screen and (max-width: 760px){
    body {
-       background:red;
+       background-color: purple;
    }
 }
 
 @media screen and (max-width: 400px){
     body {
-        background:blue;
+        background-color:blue;
     }
 
     .grid-container {

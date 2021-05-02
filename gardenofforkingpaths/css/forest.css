@@ -280,3 +280,28 @@ a {
     text-decoration:none;
     color:white;
 }
+
+@media screen and (max-width: 1024px){
+    body {
+        background-color:pink;
+    }
+ }
+
+@media screen and (max-width: 760px){
+   body {
+       background-color: purple;
+   }
+}
+
+@media screen and (max-width: 400px){
+    body {
+        background-color:blue;
+    }
+
+    .grid-container {
+        display:flex;
+        flex-direction:column;
+        justify-items:center;
+        margin-top:3vh;
+    }
+ }
