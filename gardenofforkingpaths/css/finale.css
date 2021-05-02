@@ -90,10 +90,6 @@ a {
 }
 
 @media screen and (max-width: 1024px){
-  body {
-      background-color:pink;
-  }
-
   #door {
     width:60vw;
     height:70vh;
@@ -144,10 +140,6 @@ a {
 }
 
 @media screen and (max-width: 760px){
- body {
-     background-color: purple;
- }
-
  #door {
   width:90vw;
   height:70vh;

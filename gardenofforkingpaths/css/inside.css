@@ -483,11 +483,6 @@ a {
 }
 
 @media screen and (max-width: 1024px){
-    body {
-        background-color:pink;
-    }
-
-        
     .library {
         display:flex;
         flex-direction: column;
@@ -958,12 +953,7 @@ a {
     }
  }
 
-@media screen and (max-width: 760px){
-   body {
-       background-color: purple;
-   }
-
-           
+@media screen and (max-width: 760px){          
    .library {
     display:flex;
     flex-direction: column;

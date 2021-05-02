@@ -67,29 +67,26 @@ p{
     text-align:center;
 }
 
-@media screen and (max-width: 1024px){
-    body {
-        background-color:pink;
-    }
- }
-
 @media screen and (max-width: 760px){
-   body {
-       background-color: purple;
-   }
+
+   .grid-container {
+    display:flex;
+    flex-direction:column;
+    justify-items:center;
+    margin-top:3vh;
+    margin-left:2vw;
 }
 
-@media screen and (max-width: 400px){
-    body {
-        background-color:blue;
-    }
+.grid-item {
+    width:90vw;
+    height:100;
+    border: 5px solid red;
+    animation: spaceboots .8s infinite linear;
+    mix-blend-mode: lighten;
+    display:flex;
+    justify-content:center;
+}
+}
 
-    .grid-container {
-        display:flex;
-        flex-direction:column;
-        justify-items:center;
-        margin-top:3vh;
-    }
- }
 
- 
+

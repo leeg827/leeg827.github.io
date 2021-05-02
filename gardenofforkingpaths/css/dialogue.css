@@ -116,10 +116,6 @@ li {
 }
 
 @media screen and (max-width: 1024px){
-    body {
-        background-color:pink;
-    }
-
     .container {
         margin-top:5vh;
         border:white solid 2px;
@@ -227,10 +223,6 @@ li {
  }
 
 @media screen and (max-width: 760px){
-   body {
-       background-color: purple;
-   }
-
    .container {
     border:white solid 2px;
     width:85vw;
