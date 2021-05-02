@@ -1119,6 +1119,7 @@ a {
 .convocontainer {
     margin-left:2vw;
     margin-top:10vh;
+    width:fit-content;
     height:80vh;
     width:fit-content;
     overflow-y:scroll;
@@ -1165,7 +1166,7 @@ a {
 }
 
 .dialogue {
-    width:25vw;
+    width:45vw;
     height:fit-content;
     border-right:white solid 1px;
     display:flex;
@@ -1173,7 +1174,7 @@ a {
 }
 
 .dialogue2 {
-    width:25vw;
+    width:45vw;
     height:fit-content;
     border-left:white solid 1px;
     display:flex;
@@ -1235,20 +1236,20 @@ a {
 }
 
 .maincharacter2{
-    width:20vw;
+    width:42vw;
     font-family:'fraktion_regular',sans-serif;
-    font-size:1em;
+    font-size:.85em;
     color:white;
-    margin-left:2.5vw;
+    margin-left:1vw;
     margin-right:2.5vw;
 }
 
 .stephen2{
-    width:20vw;
+    width:42vw;
     font-family:'fraktion_regular',sans-serif;
-    font-size:1em;
+    font-size:.85em;
     color:white;
-    margin-left:2.5vw;
+    margin-left:1vw;
     margin-right:2.5vw;
 }
 
@@ -1257,7 +1258,7 @@ a {
 }
 
 .maincharacter2:nth-child(2) {
-    margin-top:130vh;
+    margin-top:160vh;
 }
 
 .maincharacter2:nth-child(3) {
@@ -1269,7 +1270,7 @@ a {
 }
 
 .maincharacter2:nth-child(5) {
-    margin-top:220vh;
+    margin-top:270vh;
 }
 
 .stephen2:nth-child(1) {
@@ -1293,20 +1294,20 @@ a {
 }
 
 .mcfail{
-    width:20vw;
+    width:43vw;
     font-family:'fraktion_regular',sans-serif;
     font-size:1em;
     color:white;
-    margin-left:2.5vw;
+    margin-left:1vw;
     margin-right:2.5vw;
 }
 
 .stephenfail{
-    width:20vw;
+    width:43vw;
     font-family:'fraktion_regular',sans-serif;
     font-size:1em;
     color:white;
-    margin-left:2.5vw;
+    margin-left:1vw;
     margin-right:2.5vw;
 }
 
@@ -1328,7 +1329,7 @@ a {
 }
 
 .stephenfail:nth-child(1){
-    margin-top:110vh;
+    margin-top:160vh;
 }
 
 .tryagain {
@@ -1339,20 +1340,20 @@ a {
 }
 
 .mcdeath{
-    width:20vw;
+    width:43vw;
     font-family:'fraktion_regular',sans-serif;
     font-size:1em;
     color:white;
-    margin-left:2.5vw;
+    margin-left:1vw;
     margin-right:2.5vw;
 }
 
 .stephendeath{
-    width:20vw;
+    width:43vw;
     font-family:'fraktion_regular',sans-serif;
     font-size:1em;
     color:white;
-    margin-left:2.5vw;
+    margin-left:1vw;
     margin-right:2.5vw;
 }
 
@@ -1374,7 +1375,7 @@ a {
 }
 
 .stephendeath:nth-child(1){
-    margin-top:110vh;
+    margin-top:160vh;
 }
 
 .tryagain {
@@ -1385,20 +1386,20 @@ a {
 }
 
 .mctrue{
-    width:20vw;
+    width:42vw;
     font-family:'fraktion_regular',sans-serif;
-    font-size:1em;
+    font-size:.85em;
     color:white;
-    margin-left:2.5vw;
-    margin-right:2.5vw;
+    margin-left:1vw;
+    margin-right:3vw;
 }
 
 .stephentrue{
-    width:20vw;
+    width:45vw;
     font-family:'fraktion_regular',sans-serif;
-    font-size:1em;
+    font-size:.85em;
     color:white;
-    margin-left:2.5vw;
+    margin-left:1vw;
     margin-right:2.5vw;
 }
 

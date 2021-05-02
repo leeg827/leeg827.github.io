@@ -93,16 +93,106 @@ a {
   body {
       background-color:pink;
   }
+
+  #door {
+    width:60vw;
+    height:70vh;
+    border:red solid 2px;
+    overflow-x:hidden;
+    margin-left:18vw;
+    margin-top:13.5vh;
+}
+
+#door::-webkit-scrollbar{
+  width:.75vw;
+  border-left:red solid 2px;
+}
+
+#door::-webkit-scrollbar-track {
+  background:red;
+}
+
+#door::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background:transparent;
+}
+
+#door::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+  background:red;
+}
+
+#second {
+    margin-top:10vh;
+}
+
+.white {
+    color:white;
+    margin-left:2vw;
+    width:55vw;
+    font-family:'fraktion_regular',sans-serif;
+    font-size:2em;
+}
+
+a {
+    color:red;
+    font-family:'fraktion_regular',sans-serif;
+    font-size:1em;
+}
 }
 
 @media screen and (max-width: 760px){
  body {
      background-color: purple;
  }
+
+ #door {
+  width:90vw;
+  height:70vh;
+  border:red solid 2px;
+  overflow-x:hidden;
+  margin-left:2vw;
+  margin-top:13.5vh;
 }
 
-@media screen and (max-width: 400px){
-  body {
-      background-color:blue;
-  }
+#door::-webkit-scrollbar{
+width:3vw;
+border-left:red solid 2px;
+}
+
+#door::-webkit-scrollbar-track {
+background:red;
+}
+
+#door::-webkit-scrollbar-track {
+box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+border-radius: 10px;
+background:transparent;
+}
+
+#door::-webkit-scrollbar-thumb {
+border-radius: 10px;
+box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+background:red;
+}
+
+#second {
+  margin-top:10vh;
+}
+
+.white {
+  color:white;
+  margin-left:1vw;
+  width:85vw;
+  font-family:'fraktion_regular',sans-serif;
+  font-size:1.5em;
+}
+
+a {
+  color:red;
+  font-family:'fraktion_regular',sans-serif;
+  font-size:1em;
+}
 }
