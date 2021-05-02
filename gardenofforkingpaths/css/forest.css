@@ -441,17 +441,102 @@ body::-webkit-scrollbar-thumb{
         width:69vw;
         padding:2vw;
     }
-}
 
-@media screen and (max-width: 400px){
-    body {
-        background-color:blue;
+    .story {
+        display:flex;
+        flex-direction:row;
+        width:80vw;
+        height:fit-content;
     }
-
-    .grid-container {
+    
+    .storyone {
+        border-right: white solid 2px;
+        border-top:white solid 2px;
+        border-bottom:white solid 2px;
+        color: #ffffff;
+        width:40vw;
+        height:fit-content;
+    }
+    
+    .storytwo {
+        border-top:white solid 2px;
+        border-bottom:white solid 2px;
+        width:40vw;
+        height:fit-content;
+    }
+    
+    .storytext{
+        width:37.5vw;
+        margin-left:1vw;
+        margin-right:2.5vw;
+        margin-top:1vh;
+        margin-bottom:3vh;
+        font-size:.85em;
+        height:40vh;
+        color:white;
+        font-family:'fraktion_regular',sans-serif;
+    }
+    
+    .newconvo {
+        overflow-y:scroll;
+        overflow-x:hidden;
+        height:90vh;
+        width:100vw;
+        margin-left:9vw;
+        margin-top:5vh;
+    }
+    
+    .letter{
+        width:80vw;
+        height:90vh;
+        border:white solid 2px;
+        background:linear-gradient(180deg, red 0%, black 100%);
         display:flex;
         flex-direction:column;
-        justify-items:center;
-        margin-top:3vh;
+        overflow-y:scroll;
+        overflow-x:hidden;
     }
- }
+    
+    .letter::-webkit-scrollbar{
+        width:2vw;
+        border-left: white solid 2px;
+    }
+    
+    .letter::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 10px;
+        background:transparent;
+    }
+    
+    .letter::-webkit-scrollbar-thumb {
+        height:2vh;
+        border-radius: 10px;
+        box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+        background:red;
+    }
+    
+    .letter-item {
+        margin-top:10vh;
+        margin-bottom:10vh;
+        width:75vw;
+        font-family:'fraktion_regular',sans-serif;
+        font-size:.85em;
+        color:white;
+        margin-left:2vw;
+    }
+    
+    #last {
+        margin-top:20vh;
+    }
+    
+    .red {
+        color:red;
+        font-weight:bold;
+    }
+    
+    .link {
+        text-decoration:none;
+        color:white;
+    }
+}
+
