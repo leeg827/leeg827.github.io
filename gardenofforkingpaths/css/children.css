@@ -127,27 +127,113 @@ a {
   }
 
 @media screen and (max-width: 1024px){
-    body {
-        background-color:pink;
-    }
+    .container {
+        display:flex;
+        margin-top:30vh;
+        margin-left:1vw;
+        flex-direction:row;
+        justify-content:center;
+        overflow:hidden;
+        }   
+        
+        .item {
+            margin:1vw;
+            width:fit-content;
+            height:40vh;
+            border:white solid 2px;
+            overflow-x:hidden;
+        }
+    
+        .item2 {
+            display:flex;
+            width:30vw;
+            height:29vh;
+            background-color:pink;
+            justify-content:center;
+        }
+    
+        #childone{
+            background: linear-gradient(180deg, #FFFFFF 0%, #000000 46.88%);
+            height:91vh;
+        }
+        
+        #childtwo{
+            background: linear-gradient(180deg, #FFFFFF 0%, #000000 46.88%);
+            height:87.5vh;
+        }
+        
+        #childthree{
+            background: linear-gradient(180deg, #FFFFFF 0%, #000000 46.88%);
+            height:123vh;
+        }
+        
+        .childtalk {
+            font-family:'fraktion_regular',serif;
+            color:white;
+            font-size:1.2em;
+            margin-left:1vw;
+            width:30vw;
+            margin-top:65vh;
+        }
+    
+        .item::-webkit-scrollbar{
+            width:1.5vw;
+        }
+        
  }
 
 @media screen and (max-width: 760px){
-   body {
-       background-color: purple;
-   }
-}
-
-@media screen and (max-width: 400px){
-    body {
-        background-color:blue;
+   .container {
+    display:flex;
+    margin-top:1vh;
+    margin-left:17vw;
+    flex-direction:column;
+    justify-content:center;
+    overflow:hidden;
+    }   
+    
+    .item {
+        margin:2vw;
+        width:fit-content;
+        height:30vh;
+        border:white solid 2px;
+        overflow-x:hidden;
     }
 
-    .grid-container {
+    .item2 {
         display:flex;
-        flex-direction:column;
-        justify-items:center;
-        margin-top:3vh;
+        width:60vw;
+        height:29vh;
+        background-color:pink;
+        justify-content:center;
     }
- }
+
+    #childone{
+        background: linear-gradient(180deg, #FFFFFF 0%, #000000 46.88%);
+        height:91vh;
+    }
+    
+    #childtwo{
+        background: linear-gradient(180deg, #FFFFFF 0%, #000000 46.88%);
+        height:87.5vh;
+    }
+    
+    #childthree{
+        background: linear-gradient(180deg, #FFFFFF 0%, #000000 46.88%);
+        height:123vh;
+    }
+    
+    .childtalk {
+        font-family:'fraktion_regular',serif;
+        color:white;
+        font-size:1.2em;
+        margin-left:1vw;
+        width:49vw;
+        margin-top:65vh;
+    }
+
+    .item::-webkit-scrollbar{
+        width:2vw;
+    }   
+}
  
