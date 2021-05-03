@@ -38,17 +38,17 @@ nav {
 }
 
 #red {
-    background:url("../images/daisy.png");
+    background:url("../images/newdaisy.png");
     background-size: 4rem 4rem;
 }
 
 #blue {
-    background:url("../images/cornflower.png");
+    background:url("../images/newcornflower.png");
     background-size: 4rem 4rem;
 }
 
 #yellow {
-    background:url("../images/poppy.png");
+    background:url("../images/newpoppy.png");
     background-size: 4rem 4rem;
 }
 
@@ -65,7 +65,7 @@ nav {
     position:absolute;
     width:5rem;
     height:5rem;
-    background:url("../images/daisy.png");
+    background:url("../images/newdaisy.png");
     background-size: 5rem 5rem;
 }
 
@@ -73,25 +73,25 @@ nav {
     position:relative;
     width:20px;
     height:20px;
-    background:url("../images/daisy.png");
+    background:url("../images/newdaisy.png");
 }
 
 .blueflower {
     position:relative;
     width:20px;
     height:20px;
-    background:url("../images/cornflower.png");
+    background:url("../images/newcornflower.png");
 }
 
 .yellowflower {
     position:relative;
     width:20px;
     height:20px;
-    background:url("../images/poppy.png");
+    background:url("../images/newpoppy.png");
 }
 
 body {
-    background-image:url"../images/garden.png");
+    background-image:url("../images/wildflowerfield.png");
 }
 
 
