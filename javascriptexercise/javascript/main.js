@@ -34,15 +34,15 @@ let nycPlace = ['the Met','l train vintage','flying tiger'];
 console.log(nycPlace);
 let movies = ['Fantastic Mr. Fox','Whisper of the Heart','Perfect Blue'];
 console.log(movies);
+
 let combination =[restaurants, missAlot, nycPlace, movies];
 console.log(combination);
-combination.forEach(function(array){
-    console.log(array);
+
+combination.forEach(function(array) {
+	array.forEach(function(item) {
+		console.log(item);	
+	});
 });
 
-combination.forEach(function(array){
-    console.log(array.forEach(function(item)
-    {console.log(item)}))
-});
-
-console.log('I think I kind of came close on the last one but Im not sure so.');
+var array = [{restaurants, missAlot, nycPlace, movies}];
+console.log(array);
