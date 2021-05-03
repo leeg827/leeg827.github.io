@@ -1,99 +1,97 @@
 #button {
-    width:10vw;
-    height:4vh;
+    width:15vw;
+    height:9vh;
     background-color:rgb(234, 111, 104);
     box-shadow: inset 0px 0px 3vw #ff4444;
     color:white;
+    z-index:2;
 }
 
 #clear {
-    width:10vw;
-    height:4vh;
+    width:15vw;
+    height:9vh;
     margin-left:1vw;
     background-color:rgb(234, 111, 104);
     box-shadow: inset 0px 0px 3vw  #ff4444;
     color:white;
+    z-index:2;
+}
+
+.text {
+    font-size:2em;
 }
 
 nav {
     display: flex;
     flex-direction:row;
+    z-index:2;
+    background:rgba(220, 255, 220, 0.409);
+    width:52vw;
+    padding:1vw;
 }
 
 .color {
-    width:3vw;
-    height:4vh;
+    width:4rem;
+    height:4rem;
     margin-left:1vw;
+    z-index:2;
 }
 
 #red {
-    background-color:red;
+    background:url("/images/daisy.png");
+    background-size: 4rem 4rem;
 }
 
 #blue {
-    background-color:rgb(4, 0, 255);
+    background:url("/images/cornflower.png");
+    background-size: 4rem 4rem;
 }
 
 #yellow {
-    background-color:rgb(255, 200, 0);
+    background:url("/images/poppy.png");
+    background-size: 4rem 4rem;
 }
 
 #counter {
     font-family:helvetica;
-    font-size:2em;
-    margin-left:10px;
+    font-size:4rem;
+    color:rgb(255, 77, 77);
+    margin-left:1vw;
+    margin-top:-1vh;
+    z-index:2;
 }
 
-#container {
-    display:flex;
-    margin-left:4vw;
-    margin-top:6vh;
-    margin-bottom:6vh;
-    width: 90vw;
-    height:90vh;
-    background-color:rgb(211, 255, 187);
-    box-shadow: inset 0px 0px 10vw #5ae37f;
-    overflow:hidden;
+.flower {
+    position:absolute;
+    width:5rem;
+    height:5rem;
+    background:url("/images/daisy.png");
+    background-size: 5rem 5rem;
 }
 
-.circle {
+.redflower {
     position:relative;
     width:20px;
     height:20px;
-    border-radius:50%;
-    background-color:rgb(248, 211, 217);
-    box-shadow: inset 0px 0px 1vw #e38181;
+    background:url("/images/daisy.png");
 }
 
-.redcircle {
+.blueflower {
     position:relative;
     width:20px;
     height:20px;
-    border-radius:50%;
-    background-color:rgb(83, 0, 14);
-    box-shadow: inset 0px 0px .5vw #ff4747;
+    background:url("/images/cornflower.png");
 }
 
-.bluecircle {
+.yellowflower {
     position:relative;
     width:20px;
     height:20px;
-    border-radius:50%;
-    background-color:rgb(8, 0, 255);
-    box-shadow: inset 0px 0px 1vw #8c81e3;
-}
-
-.yellowcircle {
-    position:relative;
-    width:20px;
-    height:20px;
-    border-radius:50%;
-    background-color:rgb(255, 200, 0);
-    box-shadow: inset 0px 0px 1vw #ff9500;
+    background:url("/images/poppy.png");
 }
 
 body {
-    background-color:rgb(249, 255, 245);
+    background-image:url("/images/garden.png");
 }
 
 
