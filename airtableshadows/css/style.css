@@ -1,0 +1,56 @@
+.shadows {
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    row-gap:5vh;
+    margin-left:3vw;
+}
+
+.shadowContainer {
+    width:fit-content;
+    height:fit-content;
+    padding:1vw;
+}
+
+.shadowContainer:hover {
+    box-shadow: 0px 0px 20px 0px #ffffff inset;
+    transition:ease-in-out 1s;
+}
+
+.shadow {
+    width:20vw;
+    height:30vh;
+    background-size:cover;
+    object-fit:cover;
+}
+
+.headline {
+    font-family:helvetica;
+    text-align:center;
+    font-size:3em;
+    margin-top:7vh;
+    margin-bottom:7vh;
+    transition:ease-in-out 1s;
+}
+
+.title {
+    font-family:helvetica;
+    font-size:1em;
+    width:20vw;
+    transition:ease-in-out 1s;
+}
+
+a {
+    font-family:helvetica;
+    color:white;
+    transition:ease-in-out 1s;
+    opacity:0;
+}
+
+.appear {
+    opacity:1;
+    color:white;
+}
+
+body {
+    transition:ease-in-out 1s;
+}
