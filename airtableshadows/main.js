@@ -67,16 +67,21 @@ function showShadows() {
 
         shadowContainer.addEventListener("mouseenter", () => {
           document.querySelectorAll(".shadowcontainer").forEach((shadowContainer) => {
-              if (shadowContainer.classList.contains("shadowcontainer")) {
+              // if (shadowContainer.classList.contains("shadowcontainer")) {
+              //     shadowLink.style.opacity = "1";
+              //     title.style.color="white";
+              //     h2.style.color="white";
+              //     document.body.style.backgroundColor="black";
+              //     shadowLink.style.color="white";
+              // } else {
+              //     shadowLink.style.opacity = "0";
+              //     console.log("not hovering over anything")
+              // }
                   shadowLink.style.opacity = "1";
                   title.style.color="white";
                   h2.style.color="white";
                   document.body.style.backgroundColor="black";
                   shadowLink.style.color="white";
-              } else {
-                  shadowLink.style.opacity = "0";
-                  console.log("not hovering over anything")
-              }
           });
 
         

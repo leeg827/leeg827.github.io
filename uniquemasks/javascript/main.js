@@ -109,6 +109,7 @@ function showMasks(){
             if (body.classList.contains("Mouth")){
                 person.style.opacity="100%";
                 document.body.style.background="linear-gradient(180deg, rgb(255, 183, 82) 0%, #A37604 100%)"
+                document.body.style.backgroundAttachment = "fixed";
                 subtitle.innerText = "Mask Type: Mouth"
             } else {
                 person.style.opacity="0%";
@@ -122,6 +123,7 @@ function showMasks(){
             if (body.classList.contains("Couture")){
                 person.style.opacity="100%";
                 document.body.style.background="linear-gradient(180deg, #FF4034 0%, #FFC01F 20%, #497CFF 40%, #8EFF59 60%, #FF59C7 80%, #C854FF 100%)"
+                document.body.style.backgroundAttachment = "fixed";
                 subtitle.innerText = "Mask Type: Couture"
             } else {
                 person.style.opacity="0%";
@@ -135,6 +137,7 @@ function showMasks(){
             if (body.classList.contains("Character")){
                 person.style.opacity="100%";
                 document.body.style.background="linear-gradient( #C854FF 0%, #7F409C 100%)"
+                document.body.style.backgroundAttachment = "fixed";
                 subtitle.innerText = "Mask Type: Character"
             } else {
                 person.style.opacity="0%";
@@ -148,6 +151,7 @@ function showMasks(){
             if (body.classList.contains("Figure")){
                 person.style.opacity="100%";
                 document.body.style.background="linear-gradient(#92B0FF 0%, #2A4DA6 100%)"
+                document.body.style.backgroundAttachment = "fixed";
                 subtitle.innerText = "Mask Type: Figure"
             } else {
                 person.style.opacity="0%";
@@ -161,6 +165,7 @@ function showMasks(){
             if (body.classList.contains("Detail")){
                 person.style.opacity="100%";
                 document.body.style.background="linear-gradient(180deg, #97E374 0%, #3B7B1D 100%)"
+                document.body.style.backgroundAttachment = "fixed";
                 subtitle.innerText = "Mask Type: Detail"
             } else {
                 person.style.opacity="0%";
@@ -175,6 +180,7 @@ function showMasks(){
             if (body.classList.contains("Pattern")){
                 person.style.opacity="100%";
                 document.body.style.background="linear-gradient(180deg, #7A7A7A 7.81%, #545454 22.4%, #828282 38.54%, #4F4E4E 55.73%, #7A7A7A 71.87%, #4F4F4F 92.19%)";
+                document.body.style.backgroundAttachment = "fixed";
                 subtitle.innerText = "Mask Type: Pattern"
             } else {
                 person.style.opacity="0%";
@@ -186,6 +192,7 @@ function showMasks(){
             if (body.classList.contains("Necessity")){
                 person.style.opacity="100%";
                 document.body.style.background="linear-gradient(180deg, #676767 0%, #FFFFFF 100%)"
+                document.body.style.backgroundAttachment = "fixed";
                 subtitle.innerText = "Mask Type: Necessity"
             } else {
                 person.style.opacity="0%";
@@ -198,6 +205,7 @@ function showMasks(){
                 person.style.opacity="100%";
                 document.body.style.background="none";
                 document.body.style.background="linear-gradient(180deg, #D2372D 0%, rgb(51, 51, 255) 100%)"
+                document.body.style.backgroundAttachment = "fixed";
                 subtitle.innerText = "Mask Type: Statement"
             } else {
                 person.style.opacity="0%";
@@ -210,6 +218,8 @@ function showMasks(){
                 person.style.opacity="100%";
                 document.body.style.background="none";
                 document.body.style.backgroundImage="url('images/Asia.PNG')"
+                document.body.style.backgroundAttachment = "fixed";
+                document.body.style.backgroundSize ="cover";
                 subtitle.innerText = "Continent : Asia"
             } else {
                 person.style.opacity="0%";
@@ -222,6 +232,8 @@ function showMasks(){
                 person.style.opacity="100%";
                 document.body.style.background="none";
                 document.body.style.backgroundImage="url('images/Europe.PNG')"
+                document.body.style.backgroundAttachment = "fixed";
+                document.body.style.backgroundSize ="cover";
                 subtitle.innerText = "Continent : Europe"
             } else {
                 person.style.opacity="0%";
@@ -233,6 +245,8 @@ function showMasks(){
             if (person.classList.contains("namerica")){
                 person.style.opacity="100%";
                 document.body.style.background="none";
+                document.body.style.backgroundAttachment = "fixed";
+                document.body.style.backgroundSize ="cover";
                 document.body.style.backgroundImage="url('images/northamerica.PNG')"
                 subtitle.innerText = "Continent : North America"
             } else {
@@ -246,6 +260,8 @@ function showMasks(){
                 person.style.opacity="100%";
                 document.body.style.background="none";
                 document.body.style.backgroundImage="url('images/southamerica.PNG')"
+                document.body.style.backgroundAttachment = "fixed";
+                document.body.style.backgroundSize ="cover";
                 subtitle.innerText = "Continent : South America"
             } else {
                 person.style.opacity="0%";
@@ -258,6 +274,8 @@ function showMasks(){
                 person.style.opacity="100%";
                 document.body.style.background="none";
                 document.body.style.backgroundImage="url('images/australia.PNG')"
+                document.body.style.backgroundAttachment = "fixed";
+                document.body.style.backgroundSize ="cover";
                 subtitle.innerText = "Continent : Australia"
             } else {
                 person.style.opacity="0%";
@@ -270,6 +288,8 @@ function showMasks(){
                 person.style.opacity="100%";
                 document.body.style.background="none";
                 document.body.style.backgroundImage="url('images/Africa.PNG')"
+                document.body.style.backgroundAttachment = "fixed";
+                document.body.style.backgroundSize ="cover";
                 subtitle.innerText = "Continent : Africa"
             } else {
                 person.style.opacity="0%";
@@ -281,6 +301,8 @@ function showMasks(){
             person.style.opacity="100%";
             document.body.style.background="none";
             document.body.style.backgroundImage="url('images/grid.png')"
+            document.body.style.backgroundAttachment = "fixed";
+            document.body.style.backgroundSize ="cover";
             subtitle.innerText = "In a world seperated by coronavirus, can we still find commonalities through our masks?"
             });
 
