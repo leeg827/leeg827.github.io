@@ -59,6 +59,7 @@ function showShadows() {
 
         let shadowLink = document.createElement("a");
         shadowLink.href = shadow.fields.more;
+
         shadowLink.innerText = shadow.fields.more;
         shadowContainer.appendChild(shadowLink);
 

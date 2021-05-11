@@ -103,10 +103,12 @@ function showMasks(){
 
         var main = document.querySelectorAll("h1")
         var subtitle = document.querySelector(".subtitle");
+        var mainTitle = document.querySelector(".maintitle")
 
         var mouthFilter = document.querySelector('.mouthKey')
         mouthFilter.addEventListener("click",function(){
             if (body.classList.contains("Mouth")){
+                mainTitle.style.color = "#FFF4D9";
                 person.style.opacity="100%";
                 document.body.style.background="linear-gradient(180deg, rgb(255, 183, 82) 0%, #A37604 100%)"
                 document.body.style.backgroundAttachment = "fixed";
@@ -121,6 +123,7 @@ function showMasks(){
         var coutureFilter = document.querySelector('.coutureKey')
         coutureFilter.addEventListener("click",function(){
             if (body.classList.contains("Couture")){
+                mainTitle.style.color = "White";
                 person.style.opacity="100%";
                 document.body.style.background="linear-gradient(180deg, #FF4034 0%, #FFC01F 20%, #497CFF 40%, #8EFF59 60%, #FF59C7 80%, #C854FF 100%)"
                 document.body.style.backgroundAttachment = "fixed";
@@ -135,6 +138,7 @@ function showMasks(){
         var characterFilter = document.querySelector('.characterKey')
         characterFilter.addEventListener("click",function(){
             if (body.classList.contains("Character")){
+                mainTitle.style.color = "#FFD9FB";
                 person.style.opacity="100%";
                 document.body.style.background="linear-gradient( #C854FF 0%, #7F409C 100%)"
                 document.body.style.backgroundAttachment = "fixed";
@@ -149,6 +153,7 @@ function showMasks(){
         var figureFilter = document.querySelector('.figureKey')
         figureFilter.addEventListener("click",function(){
             if (body.classList.contains("Figure")){
+                mainTitle.style.color = "#ECEEFF";
                 person.style.opacity="100%";
                 document.body.style.background="linear-gradient(#92B0FF 0%, #2A4DA6 100%)"
                 document.body.style.backgroundAttachment = "fixed";
@@ -163,6 +168,7 @@ function showMasks(){
         var detailFilter = document.querySelector('.detailKey')
         detailFilter.addEventListener("click",function(){
             if (body.classList.contains("Detail")){
+                mainTitle.style.color = "#F5FFEC";
                 person.style.opacity="100%";
                 document.body.style.background="linear-gradient(180deg, #97E374 0%, #3B7B1D 100%)"
                 document.body.style.backgroundAttachment = "fixed";
@@ -178,6 +184,7 @@ function showMasks(){
         var patternFilter = document.querySelector('.patternKey')
         patternFilter.addEventListener("click",function(){
             if (body.classList.contains("Pattern")){
+                mainTitle.style.color = "white";
                 person.style.opacity="100%";
                 document.body.style.background="linear-gradient(180deg, #7A7A7A 7.81%, #545454 22.4%, #828282 38.54%, #4F4E4E 55.73%, #7A7A7A 71.87%, #4F4F4F 92.19%)";
                 document.body.style.backgroundAttachment = "fixed";
@@ -190,8 +197,9 @@ function showMasks(){
         var necessityFilter = document.querySelector('.necessityKey')
         necessityFilter.addEventListener("click",function(){
             if (body.classList.contains("Necessity")){
+                mainTitle.style.color = "white";
                 person.style.opacity="100%";
-                document.body.style.background="linear-gradient(180deg, #676767 0%, #FFFFFF 100%)"
+                document.body.style.background="linear-gradient(180deg, #2C2C2C 0%, #737373 100%)"
                 document.body.style.backgroundAttachment = "fixed";
                 subtitle.innerText = "Mask Type: Necessity"
             } else {
@@ -202,6 +210,7 @@ function showMasks(){
         var statementFilter = document.querySelector('.statementKey')
         statementFilter.addEventListener("click",function(){
             if (body.classList.contains("Statement")){
+                mainTitle.style.color = "#FFE0E0";
                 person.style.opacity="100%";
                 document.body.style.background="none";
                 document.body.style.background="linear-gradient(180deg, #D2372D 0%, rgb(51, 51, 255) 100%)"
@@ -298,6 +307,7 @@ function showMasks(){
 
         var reset = document.querySelector('.reset')
         reset.addEventListener("click",function(){
+            mainTitle.style.color = "#1355FF";
             person.style.opacity="100%";
             document.body.style.background="none";
             document.body.style.backgroundImage="url('images/grid.png')"
@@ -306,9 +316,14 @@ function showMasks(){
             subtitle.innerText = "In a world seperated by coronavirus, can we still find commonalities through our masks?"
             });
 
+        var burger = document.querySelector('.burger')
+        burger.addEventListener("click",function(){
+            let aside = document.querySelector("aside");
+            aside.classList.toggle("appear");
+        });
+
         var frame = document.querySelector('.frame')
         frame.addEventListener("click",function(){
-            frame.classList.toggle("frame2")
             img.classList.toggle("zoom");
             body.classList.toggle("gone");
             titleBox.classList.toggle("titleBoxTwo");
