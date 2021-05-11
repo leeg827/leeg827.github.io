@@ -192,3 +192,186 @@ p {
  margin-left:95vw;
  margin-top:9vh;
 }
+
+@media screen and (max-width: 1024px) {
+    body{
+    background:blue;
+    overflow-y:scroll;
+    }
+
+    .grid {
+        margin-top:8.2vh;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    body{
+        background:red;
+        }
+
+     .short {
+        font-family:'sectra_light', serif;
+        font-size: 2em;
+      }
+
+      .short:hover {
+        font-family:'sectra_light_italic', serif;
+        font-size: 2em;
+      }
+    
+      .medium {
+        font-family:'sectra_light', serif;
+        font-size: 2em;
+      }
+
+      .medium:hover {
+        font-family:'sectra_regular', serif;
+        font-size: 2em;
+    }
+
+      .long {
+        font-family:'sectra_light', serif;
+        font-size: 2em;
+      }
+
+      .long:hover {
+        font-family:helvetica;
+        font-size: 2em;
+        font-style:italic;
+    }
+
+      #container {
+        display:flex;
+        background-color:pink;
+        width:320%;
+        flex-direction:row;
+        justify-content:space-between;
+        animation: moving 20s linear infinite;
+    }
+
+    .navtitle{
+        width:80vw;
+    }
+
+    .grid {
+        margin-left:8vw;
+        margin-top:8.2vh;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        border: none;
+    }
+
+    .receipt {
+        width:28vw;
+        height:55vh;
+    }
+
+    #record {
+        width:15vw;
+        height:15vh;
+    }
+    
+    #plastic {
+        width:15vw;
+        height:15vh;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body{
+        background:pink;
+        }
+
+        #container2 {
+            flex-direction:column;
+        };
+    
+         .short {
+            font-family:'sectra_light', serif;
+            font-size: 2em;
+          }
+    
+          .short:hover {
+            font-family:'sectra_light_italic', serif;
+            font-size: 2em;
+          }
+        
+          .medium {
+            font-family:'sectra_light', serif;
+            font-size: 2em;
+          }
+    
+          .medium:hover {
+            font-family:'sectra_regular', serif;
+            font-size: 2em;
+        }
+    
+          .long {
+            font-family:'sectra_light', serif;
+            font-size: 2em;
+          }
+    
+          .long:hover {
+            font-family:helvetica;
+            font-size: 2em;
+            font-style:italic;
+        }
+    
+          #container {
+            display:flex;
+            background-color:pink;
+            width:320%;
+            flex-direction:row;
+            justify-content:space-between;
+            animation: moving 20s linear infinite;
+        }
+    
+        .navtitle{
+            width:80vw;
+        }
+    
+        .grid {
+            margin-left:21vw;
+            margin-top:8.2vh;
+            display:grid;
+            grid-template-columns: 1fr;
+            border: none;
+        }
+    
+        .receipt {
+            width:75vw;
+            height:70vh;
+        }
+    
+        #record {
+            width:37vw;
+            height:18vh;
+        }
+        
+        #plastic {
+            width:37vw;
+            height:18vh;
+        }
+        
+        aside {
+            margin-left:13vw;
+        }
+
+        p {
+            font-family:helvetica;
+            font-size:1em;
+            color:red;
+            z-index:2;
+            margin-left:42vw;
+            margin-top:9vh;
+           }
+
+        h1 {
+            font-size:2em;
+        }
+}
