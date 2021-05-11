@@ -36,7 +36,7 @@ redButton.addEventListener ('click',function(){
 blueButton.addEventListener ('click',function(){
     let flowers = document.querySelectorAll('.flower');
     flowers.forEach(function(flower){
-        flower.style.background="url('/images/newcornflower.png')"
+        flower.style.background="url('/images/blanketflower.png')"
         flower.style.backgroundSize="5rem 5rem";
     })
 });
@@ -44,7 +44,7 @@ blueButton.addEventListener ('click',function(){
 yellowButton.addEventListener ('click',function(){
     let flowers = document.querySelectorAll('.flower');
     flowers.forEach(function(flower){
-        flower.style.background="url('/images/newpoppy.png')"
+        flower.style.background="url('/images/cosmo.png')"
         flower.style.backgroundSize="5rem 5rem";
     })
 });

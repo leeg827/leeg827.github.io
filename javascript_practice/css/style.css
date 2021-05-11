@@ -43,12 +43,12 @@ nav {
 }
 
 #blue {
-    background:url("../images/newcornflower.png");
+    background:url("../images/blanketflower.png");
     background-size: 4rem 4rem;
 }
 
 #yellow {
-    background:url("../images/newpoppy.png");
+    background:url("../images/cosmo.png");
     background-size: 4rem 4rem;
 }
 
@@ -80,14 +80,14 @@ nav {
     position:relative;
     width:20px;
     height:20px;
-    background:url("../images/newcornflower.png");
+    background:url("../images/cosmo.png");
 }
 
 .yellowflower {
     position:relative;
     width:20px;
     height:20px;
-    background:url("../images/newpoppy.png");
+    background:url("../images/blanketflower.png");
 }
 
 body {
