@@ -327,9 +327,6 @@ hr {
 }
 
 @media screen and (max-width: 1024px){
-    body {
-        background-color:pink;
-    }
 
     #door {
         width: 45vw;
@@ -432,9 +429,6 @@ hr {
  }
 
 @media screen and (max-width: 760px){
-   body {
-       background-color: purple;
-   }
 
    #door {
     width: 55vw;
@@ -638,10 +632,6 @@ hr {
 }
 
 @media screen and (max-width: 400px){
-    body {
-        background-color:blue;
-        overflow:hidden;
-    }
 
     #door {
         width: 81vw;

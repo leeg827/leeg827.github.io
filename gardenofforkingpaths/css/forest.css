@@ -307,6 +307,10 @@ a {
         height:15vh;
     }
 
+    .grid > .text{
+        width:50vw;
+    }
+
     .text {
         align-self:center;
         color: #ffffff;
@@ -474,6 +478,15 @@ body::-webkit-scrollbar-thumb{
     .smallrect{
         width:20vw;
         height:46vh;
+}
+
+.griditem:nth-child(17){
+    width:80vw;
+    margin-left:30vw;
+}
+
+.griditem:nth-child(23){
+    width:50vw;
 }
 
     .vertrect {
