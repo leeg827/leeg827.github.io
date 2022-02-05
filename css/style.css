@@ -1,9 +1,9 @@
 body {
-    background-color: rgb(102, 130, 255);
-    animation-name: color_change;
+    background-color: rgb(255, 255, 255);
+    /* animation-name: color_change;
 	animation-duration: 5s;
 	animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation-direction: alternate; */
     margin:50;
 }
 
@@ -14,8 +14,11 @@ body {
 }
 
 .text {
-    color:white;
-    font-family:Arial, Helvetica, sans-serif;
+    color:rgb(0, 0, 0);
+    font-family:'Mazius-Italic' ,sans-serif;
+    /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black; */
+    font-size:50;
 }
 
 ul {
@@ -31,4 +34,28 @@ a {
     width:500px;
     height:400px;
     border-style:none;
+}
+
+@font-face{
+    font-family: "Mazius";
+    src: url(../Mazius/MAZIUSREVIEW20.09-Extraitalic.woff)format('woff'),
+    url(../Mazius/MAZIUSREVIEW20.09-Italic.woff2)format('woff2');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face{
+    font-family:"Mazius-Italic";
+    src: url(../Mazius/MAZIUSREVIEW20.09-Italic.woff)format('woff'),
+    url(../Mazius/MAZIUSREVIEW20.09-Italic.woff2)format('woff2');
+    font-weight:italic;
+    font-style:italic;
+}
+
+@font-face{
+    font-family:"Mazius-Extra-Italic";
+    src: url(../Mazius/MAZIUSREVIEW20.09Extraitalic.woff) format('woff'),
+    url(../Mazius/MAZIUSREVIEW20.09-Extraitalic.woff2) format('woff2');
+    font-weight:italic;
+    font-style:italic;
 }
