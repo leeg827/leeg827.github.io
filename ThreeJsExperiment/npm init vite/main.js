@@ -1,9 +1,49 @@
 
   import * as THREE from 'https://cdn.skypack.dev/three@0.126.1/build/three.module.js';
-
+  import * as dat from "dat.gui";
   const scene = new THREE.Scene()
   const camera = new THREE.PerspectiveCamera(75, innerWidth / innerHeight, 0.1, 1000 )
   const renderer = new THREE.WebGLRenderer()
+
+  const gui = new dat.GUI()
+  const world = {
+    plane:{
+      width: 10,
+      height:10
+    }
+  }
+  gui.add(world.plane,'width',1,20).onChange(()=>{
+   planeMesh.geometry.dispose()
+   planeMesh.geometry = new THREE.PlaneGeometry(world.plane.width,10,10,10)
+
+   const {array} = planeMesh.geometry.attributes.position
+
+   for (let i = 0; i < array.length; i += 3){
+     const x = array[i]
+     const y = array[i+1]
+     const z = array[i+2]
+ 
+     array[i + 2] = z + Math.random(5)
+ 
+     console.log(array[i])
+   }
+  })
+
+  gui.add(world.plane,'height',1,20).onChange(()=>{
+    planeMesh.geometry.dispose()
+    planeMesh.geometry = new THREE.PlaneGeometry(world.plane.width,world.plane.height,10,10)
+
+    const {array} = planeMesh.geometry.attributes.position
+
+    for (let i = 0; i < array.length; i += 3){
+      const x = array[i]
+      const y = array[i+1]
+      const z = array[i+2]
+  
+      array[i + 2] = z + Math.random(5)
+  
+      console.log(array[i])
+  }})
 
 
   renderer.setSize(innerWidth,innerHeight)
@@ -18,9 +58,22 @@
 
   const planeGeometry = new THREE.PlaneGeometry(5,5,10,10)
   
-  const planeMaterial = new THREE.MeshPhongMaterial({color: 0xff0000,side:THREE.DoubleSide})
+  const planeMaterial = new THREE.MeshPhongMaterial({color: 0xff0000,side:THREE.DoubleSide,flatShading:THREE.FlatShading})
   const planeMesh = new THREE.Mesh(planeGeometry,planeMaterial)
   scene.add(planeMesh)
+
+  console.log(planeMesh.geometry.attributes.position.array)
+  const {array} = planeMesh.geometry.attributes.position
+
+  for (let i = 0; i < array.length; i += 3){
+    const x = array[i]
+    const y = array[i+1]
+    const z = array[i+2]
+
+    array[i + 2] = z + Math.random(5)
+
+    console.log(array[i])
+  }
 
   // scene.add(mesh)
 
