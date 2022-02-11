@@ -4,7 +4,7 @@ body {
 	animation-duration: 5s;
 	animation-iteration-count: infinite;
     animation-direction: alternate; */
-    margin:50;
+    margin-top:5vh;
 }
 
 @keyframes color_change {
@@ -18,13 +18,39 @@ body {
     font-family:'Mazius-Italic' ,sans-serif;
     /* -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black; */
-    font-size:50;
+}
+
+p{
+    font-family:'Mazius',sans-serif;
+    font-size:1.5em;
+    width:35vw;
+    margin-left:10vw;
+}
+
+h1{
+    font-size:3em;
+    margin-top:2em;
+    margin-left:10vw;
+    width:10em;
 }
 
 ul {
+    margin:0vw;
     list-style-type:none;
     line-height: 120%;
+    color:rgb(0, 0, 0);
+    font-family:'Mazius-Italic' ,sans-serif;
+    /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black; */
+    font-size:20;
 }
+
+ul>li{
+    display:inline-block;
+    margin-right:2vw;
+    margin-left:0vw;
+}
+
 
 a {
     text-decoration:none;
@@ -38,7 +64,7 @@ a {
 
 @font-face{
     font-family: "Mazius";
-    src: url(../Mazius/MAZIUSREVIEW20.09-Extraitalic.woff)format('woff'),
+    src: url(../Mazius/MAZIUSREVIEW20.09-Regular.woff)format('woff'),
     url(../Mazius/MAZIUSREVIEW20.09-Italic.woff2)format('woff2');
     font-weight:normal;
     font-style:normal;
