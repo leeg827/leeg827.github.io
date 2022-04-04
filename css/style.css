@@ -5,7 +5,6 @@ body {
 	animation-iteration-count: infinite;
     animation-direction: alternate; */
     margin-top:5vh;
-    background-image:url("../img/roomm.png");
     background-size:cover;
     background-position:fixed;
 }
@@ -17,48 +16,72 @@ body {
 }
 
 .text {
-    color:aliceblue;
-    font-family:'Mazius-Italic' ,sans-serif;
+    color:rgb(0, 0, 0);
+    font-family:'Basic-Grotesque-Arabic' ,sans-serif;
     /* -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black; */
+    position:absolute;
+    z-index:20;
 }
 
 p{
-    font-family:'Mazius',sans-serif;
+    font-family:'Basic-Grotesque-Arabic',sans-serif;
     font-size:1.5em;
     width:35vw;
     margin-left:10vw;
-    color:aliceblue;
+    color:rgb(0, 0, 0);
+    position:absolute;
+    z-index:20;
+}
+
+#p1 {
+    margin-top:13vw;
+}
+
+#p2 {
+    margin-top:20vw;
 }
 
 h1{
     font-size:3em;
-    margin-top:2em;
+    margin-top:2.5em;
     margin-left:10vw;
     width:10em;
-    color:aliceblue;
+    font-family:'Basic-Grotesque-Arabic',sans-serif;
+    color:rgb(0, 0, 0);
+    position:absolute;
+    z-index:20;
 }
 
 h2 {
     margin-left:3vw;
-    color:aliceblue;
+    color:rgb(0, 0, 0);
+    position:absolute;
+    z-index:20;
 }
 
 ul {
-    margin:0vw;
+    display:flex;
+    justify-content:space-between;
+    margin-top:10vh;
+    margin-left:3vw;
+    padding:0;
     list-style-type:none;
     line-height: 120%;
-    color:aliceblue;
-    font-family:'Mazius-Italic' ,sans-serif;
+    color:rgb(0, 0, 0);
+    font-family:'Basic-Grotesque-Arabic' ,sans-serif;
     /* -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black; */
-    font-size:20;
+    font-size:16;
+    position:absolute;
+    width:90%;
 }
 
 ul>li{
-    display:inline-block;
-    margin-right:2vw;
-    margin-left:0vw;
+    display:block;
+    /* margin-right:15vw; */
+    /* position:absolute; */
+    z-index:20;
 }
 
 
@@ -70,7 +93,17 @@ a {
     width:500px;
     height:400px;
     border-style:none;
+    position:absolute;
+    z-index:20;
 }
+
+.head{
+position: absolute;
+width: 95vw;
+height: 110vh;
+left:0;
+position:absolute;
+z-index:-1;}
 
 @font-face{
     font-family: "Mazius";
@@ -94,4 +127,12 @@ a {
     url(../Mazius/MAZIUSREVIEW20.09-Extraitalic.woff2) format('woff2');
     font-weight:italic;
     font-style:italic;
+}
+
+@font-face{
+    font-family:"Basic-Grotesque-Arabic";
+    src:url(../BasicGrotesqueArabic/basis-grotesque-arabic-medium-trial.woff) format('woff'),
+    url(../BasicGrotesqueArabic/basis-grotesque-arabic-medium-trial.woff2)format('woff2');
+    font-weight:normal;
+    font-style:normal;
 }
