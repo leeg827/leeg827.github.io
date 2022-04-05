@@ -1,0 +1,193 @@
+
+#title {
+    width:50vw;
+    margin-left:25vw;
+    margin-top:15vh;
+    position:absolute;
+    z-index:-5;
+}
+
+#projectName {
+    text-align:right;
+}
+
+h1 {
+    font-family:liquido-fluid;
+    font-size:32px;
+    color:rgb(107, 107, 107);
+}
+
+.top {
+    list-style:none;
+    display:flex;
+    width:50vw;
+    justify-content:space-between;
+    margin-left:26vw;
+    padding:0;
+}
+
+.top>li {
+    display:block;
+}
+
+.bottom{
+    list-style:none;
+    display:flex;
+    width:48vw;
+    justify-content:space-between;
+    margin-left:26vw;
+    padding:0;
+}
+
+.fishbowl {
+    z-index:20;
+    position:absolute;
+    width:40vw;
+    margin-left:31vw;
+    margin-top:5vh;
+}
+
+.fish {
+    z-index:5;
+    position:absolute;
+    margin-left:45vw;
+    margin-top:32vh;
+    width:10vw;
+}
+
+.myname {
+    font-family:Windius;
+    font-size:16px;
+    color:rgb(131, 131, 131);
+    margin-top:80vh;
+}
+
+.pages {
+    width:50vw;
+    height:60vh;
+    color:white;
+    margin-top:10vh;
+    display:flex;
+    justify-content:space-between;
+}
+
+.pagetitle {
+    list-style:none;
+    display:flex;
+    width:48vw;
+    justify-content:space-between;
+    margin-right:23vw;
+    padding:0;
+}
+
+.distort {
+    width:73vw;
+    position:absolute;
+    z-index:20;
+    margin-right:11vw;
+    margin-left:-11vw;
+    margin-top:-13vh;
+}
+
+.page {
+    display:block;
+}
+
+ul {
+    list-style:none;
+    justify-content:space-between;
+}
+
+.pages>li {
+    margin-left:2vw;
+}
+
+p {
+    font-size:16px;
+    position:absolute;
+    z-index:5;
+    font-family:Windius;
+    color:rgb(83, 83, 83);
+    width:30vw;
+    margin-left:10vw;
+}
+
+.cover {
+    scroll-behavior:horizontal;
+    overflow-y:hidden;
+    width:60vw;
+    height:130vh;
+    margin-left:21vw;
+    padding-bottom:10vh;
+    position:absolute;
+    padding:0;
+    background-image: url(../images/watertexture.png);
+    background-size:cover;
+    /* background-color:rgb(165, 198, 248); */
+}
+
+.padding {
+    height:10vh;
+    width:50vw;
+    background-color:white;
+    display:block;
+}
+
+.water {
+    background-image:url(../images/cover.png);
+    background-size:cover;
+    background-position:center;
+    position:fixed;
+    z-index:25;
+    width:50vw;
+    height:120vh;
+    margin-left:25vw;
+}
+
+@font-face {
+    font-family: "Windius";
+    src: url("/windius/windius-regular-webfont.woff") format("woff"),
+         url("/windius/windius-regular-webfont.woff2") format("woff2");
+  }
+
+@font-face {
+    font-family: "liquido-fluid";
+    src: url("/liquido/liquido-fluid-webfont.woff") format("woff"),
+         url("/liquido/liquido-fluid-webfont.woff2") format("woff2");
+} 
+
+@font-face {
+    font-family: "liquido-regular";
+    src: url("/liquido/liquido-regular-webfont.woff") format("woff"),
+         url("/liquido/liquido-regular-webfont.woff2") format("woff2");
+} 
+
+#beginningWords {
+    margin-top:22vh;
+    margin-left:12vw;
+}
+
+.pictures {
+    width:30vw;
+    margin-top:15vh;
+    border-radius: 25px;
+}
+
+
+
+.wide{
+    width:35vw;
+    margin-left:8vw;
+    margin-top:25vh;
+}
+
+.tall {
+    height:70vh;
+    margin-left:10vw;
+}
+
+#square {
+    width:35vw;
+    margin-top:20vh;
+    margin-left:8vw;
+}
