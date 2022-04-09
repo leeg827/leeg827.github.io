@@ -74,9 +74,10 @@ h1 {
 .pagetitle {
     list-style:none;
     display:flex;
-    width:48vw;
+    width:27vw;
     justify-content:space-between;
-    margin-right:23vw;
+    margin-right:45vw;
+    margin-top:2vh;
     padding:0;
 }
 
@@ -98,6 +99,10 @@ ul {
     justify-content:space-between;
 }
 
+#first {
+    margin-left:9vw;
+}
+
 .pages>li {
     margin-left:2vw;
 }
@@ -108,21 +113,22 @@ p {
     z-index:5;
     font-family:Windius;
     color:rgb(83, 83, 83);
-    width:30vw;
+    width:27vw;
     margin-left:10vw;
 }
 
 .cover {
     scroll-behavior:horizontal;
     overflow-y:hidden;
-    width:60vw;
-    height:130vh;
-    margin-left:21vw;
+    width:55vw;
+    height:55vw;
+    margin-left:22vw;
     padding-bottom:10vh;
     position:absolute;
     padding:0;
     background-image: url(../images/watertexture.png);
     background-size:cover;
+    border-radius:50%;
     /* background-color:rgb(124, 177, 255); */
 }
 
@@ -163,31 +169,31 @@ p {
 } 
 
 #beginningWords {
-    margin-top:22vh;
-    margin-left:12vw;
+    margin-top:5vh;
+    margin-left:9vw;
 }
 
 .pictures {
-    width:30vw;
-    margin-top:15vh;
-    border-radius: 25px;
+    width:25vw;
+    margin-top:5vh;
 }
 
 
 
 .wide{
-    width:35vw;
-    margin-left:8vw;
-    margin-top:25vh;
+    width:30vw;
+    margin-left:-1vw;
+    margin-top:10vh;
 }
 
 .tall {
-    height:70vh;
-    margin-left:10vw;
+    width:25vw;
+    height:55vh;
+    margin-left:1vw;
 }
 
 #square {
-    width:35vw;
-    margin-top:20vh;
-    margin-left:8vw;
+    width:25vw;
+    margin-top:8vh;
+    margin-left:1vw;
 }
