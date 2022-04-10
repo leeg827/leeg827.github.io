@@ -159,20 +159,20 @@ p {
 
 @font-face {
     font-family: "Windius";
-    src: url("../windius/windius-regular-webfont.woff") format("woff"),
-         url("../windius/windius-regular-webfont.woff2") format("woff2");
+    src: url("/windius/windius-regular-webfont.woff") format("woff"),
+         url("/windius/windius-regular-webfont.woff2") format("woff2");
   }
 
 @font-face {
     font-family: "liquido-fluid";
-    src: url("../liquido/liquido-fluid-webfont.woff") format("woff"),
-         url("../liquido/liquido-fluid-webfont.woff2") format("woff2");
+    src: url("/liquido/liquido-fluid-webfont.woff") format("woff"),
+         url("/liquido/liquido-fluid-webfont.woff2") format("woff2");
 } 
 
 @font-face {
     font-family: "liquido-regular";
-    src: url("../liquido/liquido-regular-webfont.woff") format("woff"),
-         url("../liquido/liquido-regular-webfont.woff2") format("woff2");
+    src: url("/liquido/liquido-regular-webfont.woff") format("woff"),
+         url("/liquido/liquido-regular-webfont.woff2") format("woff2");
 } 
 
 #beginningWords {
