@@ -1,0 +1,47 @@
+body {
+    background: rgb(98, 255, 163);
+    background: linear-gradient(184deg, rgb(128, 255, 93) 0%, rgb(84, 221, 255) 100%);
+    height:100vh;
+    width:100vw;    
+}
+
+.bar {
+    display:flex;
+    align-items:flex-start;
+    width:99%;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+.text{
+    font-family:haas_grotesk_normal;
+    font-size:1.3em;
+    text-align:center;
+}
+
+.cornertext {
+    font-family:haas_grotesk_normal;
+    font-size:1.3em;
+    color:#448fff;
+}
+
+.leftcorner {
+    font-family:haas_grotesk_normal;
+    font-size:1.3em;
+    color:#448fff;
+}
+
+@font-face {
+    font-family: belldemai_thin_italic;
+    src: url("../belledemai/belledemaiitalic-thin-webfont.woff");
+  }
+
+@font-face {
+    font-family: belldemai_thin_normal;
+    src: url("../belledemai/belledemai-thin-webfont.woff");
+  }
+
+  @font-face {
+    font-family: haas_grotesk_normal;
+    src: url("../neuehaas/HaasGrotTextR-55Roman.woff");
+  }
