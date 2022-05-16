@@ -19,6 +19,40 @@ ul>li {
     display:block;
 }
 
+.dragcontain {
+    height:60vh;
+    display:flex;
+    flex-direction:column;
+    mix-blend-mode: color;
+}
+.bar {
+    display:flex;
+    align-items:flex-start;
+    width:99%;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+.purpletext {
+    color:rgb(255, 73, 255);
+    margin-bottom:2vh;
+    position:relative;
+    z-index:200;
+}
+
+.yellowtext {
+    color:rgb(255, 153, 0);
+    position:relative;
+    z-index:200;
+}
+
+.greentext {
+    color:rgb(0, 255, 72);
+    position:relative;
+    z-index:200;
+}
+
+
 .wrapper {
     position: relative;
     height: 100vh;
@@ -29,7 +63,8 @@ ul>li {
 
 .text{
     font-family:haas_grotesk_normal;
-    color:rgba(185, 255, 228, 0.554);
+    font-size:1.3em;
+    text-align:center;
 }
 
 a {
@@ -41,12 +76,21 @@ a {
     font-family:haas_grotesk_normal;
     font-size:1.5em;
     color:rgb(255, 198, 93);
+    mix-blend-mode: screen;
+}
+
+.leftcorner {
+    font-family:haas_grotesk_normal;
+    font-size:1.5em;
+    color:rgb(255, 198, 93);
+    mix-blend-mode: screen;
 }
 
 .classname {
     font-family:haas_grotesk_normal;
     letter-spacing: .2rem;
     color:rgb(255, 188, 43);
+    mix-blend-mode: screen;
     text-align:center;
     margin-top:40vh;
 }
