@@ -45,3 +45,21 @@ body {
     font-family: haas_grotesk_normal;
     src: url("../neuehaas/HaasGrotTextR-55Roman.woff");
   }
+
+  img {
+    transform: rotate(270deg);
+    width:45%;
+    margin-left:25vw;
+    margin-top:-20vh;
+  }
+
+  .bodytext{
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:10vh;
+    display:block;
+    color:#448fff;
+    width:95%;
+    font-family:haas_grotesk_normal;
+    line-height:5vh;
+}

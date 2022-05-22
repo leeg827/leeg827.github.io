@@ -47,14 +47,31 @@ body {
 .cornertext {
     font-family:haas_grotesk_normal;
     font-size:1.3em;
-    color:#dbcbff;
+    color:#fff6e9;
     mix-blend-mode: screen;
 }
+
+.bodytext{
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:10vh;
+    display:block;
+    color:#fff6e9;
+    width:95%;
+    font-family:haas_grotesk_normal;
+    line-height:5vh;
+}
+img {
+    transform: rotate(270deg);
+    width:45%;
+    margin-left:25vw;
+    margin-top:-20vh;
+  }
 
 .leftcorner {
     font-family:haas_grotesk_normal;
     font-size:1.3em;
-    color:#dbcbff;
+    color:#fff6e9;
     mix-blend-mode: screen;
 }
 
