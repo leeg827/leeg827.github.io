@@ -8,12 +8,11 @@ body {
     background-size:cover;
     background-position:fixed;
     font-family: 'Suisse Int\'l Trial';
+    margin:0;
 }
 
-@keyframes color_change {
-    0% { background-color: rgb(45, 45, 129); }
-    50% {background-color:rgb(133, 102, 255)}
-	100% { background-color: rgb(102, 130, 255) }
+hr {
+    margin:0;
 }
 
 .text {
@@ -24,46 +23,54 @@ body {
     z-index:20;
 }
 
-p{
-    width:35vw;
-    margin-left:10vw;
-    color:rgb(0, 0, 0);
-    position:absolute;
-    z-index:20;
-}
-
 .big{
     font-size:4em;
 }
 
+.firsttitle {
+    font-size:2em;
+}
+
+.secondtitle{
+    font-size:1.5em;
+}
+
 ul {
-    display:inline-flex;
-    justify-content:space-between;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
     padding:0;
     list-style-type:none;
     line-height: 120%;
     color:rgb(0, 0, 0);
     position:absolute;
     margin:0;
-    width:15vw;
+    width:20%;
+}
+
+.caption {
+    height:30%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:1%;
+    margin: 0 1vw 0 1vw;
+}
+
+.colorblock {
+    background-color:rgb(169, 168, 168);
 }
 
 
 .header {
-    width:84vw;
-    display:inline-flex;
+    display:grid;
+    grid-template-columns:80% 1fr;
     justify-content:space-between;
     padding:0;
+    width:100%;
     list-style-type:none;
     line-height: 120%;
     flex-direction:row;
     position:absolute;
-    font-size:1vw;
 }
-
-/* .war {
-    width:30%;
-} */
 
 a {
     text-decoration:none;
@@ -77,24 +84,36 @@ a {
     z-index:20;
 }
 
-.head{
-position: absolute;
-width: 95vw;
-height: 110vh;
-left:0;
-position:absolute;
-z-index:-1;}
-
 .block {
- height:80vh;
- display:inline-flex;
- flex-direction:row;
+ height:90%;
+ display:grid;
+ grid-template-columns: 1fr 1fr;
+ gap:1%;
  padding-top:5vh;
+ margin: 0 1vw 0 1vw;
 }
 
+.block2 {
+    height:90%;
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:1%;
+    margin: 0 1vw 0 1vw;
+   }
+
 .placeimage {
-    background-color:pink;
-    width:44vw;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    width:100%;
+}
+
+.footer {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-top:10%;
+    background: rgb(146,176,152);
+    background: linear-gradient(180deg, rgba(146,176,152,1) 0%, rgba(233,134,34,1) 100%);
+    padding: 2% 1vw 10% 1vw;
 }
 
 @font-face {
