@@ -1,4 +1,16 @@
-import {gsap} from "gsap/all";
-import { Flip } from "gsap/all";
+import Intro from "./animations/intro.js";
 
-gsap.registerPlugin(Flip);
+class App {
+    constructer(){
+        this._createIntro();
+    }
+
+
+    _createIntro(){
+        this.intro = new Intro();
+    }
+} 
+
+
+
+new App(); 
