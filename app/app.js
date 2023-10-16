@@ -1,16 +1,13 @@
-import Intro from "./animations/intro.js";
+import Intro from './animations/intro.js';
 
 class App {
-    constructer(){
-        this._createIntro();
-    }
+  constructor() {
+    this._createIntro();
+  }
 
+  _createIntro() {
+    this.intro = new Intro();
+  }
+}
 
-    _createIntro(){
-        this.intro = new Intro();
-    }
-} 
-
-
-
-new App(); 
+new App();

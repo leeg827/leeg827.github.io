@@ -1,5 +1,5 @@
-import { gsap } from './animations/node_module/gsap-core.js';
-import { Flip } from './animations/node_module/gsap/Flip.js';
+import { gsap } from "/node_modules/gsap/gsap-core.js"; 
+import Flip from '/node_modules/gsap/Flip.js';
 
 gsap.registerPlugin(Flip);
 
