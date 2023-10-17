@@ -6,14 +6,15 @@ gsap.registerPlugin(Flip);
 export default class Intro {
     constructer(){
         this.state = null;
-        this.centerImage = document.querySelector('.intro_center-image img');
-        this.centerImageWrapper = document.querySelector('.intro_center-image');
-        this.imageWrappers = document.querySelector('.intro_images');
-        this.images = [...this.imageWrappers.querySelectorAll('img')];
+        this.centerImage = document.querySelector('.intro__center-image img');
+        this.centerImageWrapper = document.querySelector('.intro__center-image');
+        this.imagesWrapper = document.querySelector('.intro__images');
+        this.images = [...this.imagesWrapper.querySelectorAll('img')];
 
         this._getFinalState();
         this._setInitialState();
-        this._moveImagesToCenter();
+        // this._moveImagesToCenter();
+        this.fadeUpImages();
     }
 
     _getFinalState(){
@@ -42,7 +43,17 @@ export default class Intro {
 
         gsap.set(this.centerImage,{
             scale:2,
-        })
+        });
+    }
+
+    _fadeUpImage(){
+        return gsap.to([this.images,this.centerImageWrapper],{
+            y:0,
+            opacity:1,
+            duration:3,
+            ease:'power3.inOut',
+            stagger:0.1,
+        });
     }
 
     _moveImagesToCenter(){
@@ -50,6 +61,6 @@ export default class Intro {
         duration:2,
         ease:'expo.InOut',
         stagger:0.15,
-        })
+        });
     }
 }
