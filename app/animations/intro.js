@@ -10,6 +10,9 @@ export default class Intro {
         this.centerImageWrapper = document.querySelector('.intro__center-image');
         this.imagesWrapper = document.querySelector('.intro__images');
         this.images = [...this.imagesWrapper.querySelectorAll('img')];
+        this.titleLines = 'h1 [data-animation="text-reveal"] > *';
+        this.navLines = '.header [data-animation="text-reveal"] > *';
+        this.textLine = '.intro_line';
 
         this._getFinalState();
         this._setInitialState();
@@ -44,15 +47,20 @@ export default class Intro {
         gsap.set(this.centerImage,{
             scale:2,
         });
+
+        gsap.set(this.textLine,{
+            scaleX:0,
+        });
     }
 
     _fadeUpImage(){
         return gsap.to([this.images,this.centerImageWrapper],{
-            y:0,
+            y:0, 
             opacity:1,
             duration:3,
             ease:'power3.inOut',
             stagger:0.1,
+            onComplete: () => this._moveImagesToCenter(),
         });
     }
 
@@ -61,6 +69,47 @@ export default class Intro {
         duration:2,
         ease:'expo.InOut',
         stagger:0.15,
+        onComplete:()=> this._scaleCenterImage()
         });
+    }
+
+    _scaleCenterImage(){
+        const tl = gsap.timeline({
+            onComplete: () => this._revealContent()
+        });
+
+        tl.to(this.centerImage,{
+            scale:1,
+            duration:2,
+            ease:'expo.inOut',
+        }).to(this.centerImage,{
+            scale:1,
+            duration:2,
+            ease:'expo.inOut',
+        },0);
+
+        return tl;
+    }
+
+    _revealContent(){
+        const tl = gsap.timeline({
+            
+            defaults: {
+                y:0,
+                duration: 2,
+                ease: 'expo.out',
+            },
+        });
+
+        tl.to(this.titleLines,{
+            stagger: 0.2,
+        }).to(this.navLines,{
+            stagger:0.3,
+        },0).to(this.textLine,{
+            scaleX:1,
+            transformOrigin:'left center',
+        },0);
+
+    return tl;
     }
 }
