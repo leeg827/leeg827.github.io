@@ -1,5 +1,5 @@
 import { gsap } from "/node_modules/gsap/gsap-core.js"; 
-import Flip from '/node_modules/gsap/Flip.js';
+import { Flip }from '/node_modules/gsap/Flip.js';
 
 gsap.registerPlugin(Flip);
 
@@ -16,8 +16,7 @@ export default class Intro {
 
         this._getFinalState();
         this._setInitialState();
-        // this._moveImagesToCenter();
-        this.fadeUpImages();
+        this._moveImagesToCenter();
     }
 
     _getFinalState(){
@@ -40,76 +39,20 @@ export default class Intro {
         });
 
         gsap.set(this.centerImageWrapper,{
-        y:80,
-           scale:0.15,
-        })
+            y:80,
+            scale:0.15,
+        });
 
         gsap.set(this.centerImage,{
-            scale:2,
-        });
-
-        gsap.set(this.textLine,{
-            scaleX:0,
-        });
-    }
-
-    _fadeUpImage(){
-        return gsap.to([this.images,this.centerImageWrapper],{
-            y:0, 
-            opacity:1,
-            duration:3,
-            ease:'power3.inOut',
-            stagger:0.1,
-            onComplete: () => this._moveImagesToCenter(),
+            scale: 2,
         });
     }
 
     _moveImagesToCenter(){
-        Flip.to(this.state, {
-        duration:2,
-        ease:'expo.InOut',
-        stagger:0.15,
-        onComplete:()=> this._scaleCenterImage()
-        });
-    }
-
-    _scaleCenterImage(){
-        const tl = gsap.timeline({
-            onComplete: () => this._revealContent()
-        });
-
-        tl.to(this.centerImage,{
-            scale:1,
-            duration:2,
+        Flip.to(this.state,{
+            duration: 2,
             ease:'expo.inOut',
-        }).to(this.centerImage,{
-            scale:1,
-            duration:2,
-            ease:'expo.inOut',
-        },0);
-
-        return tl;
-    }
-
-    _revealContent(){
-        const tl = gsap.timeline({
-            
-            defaults: {
-                y:0,
-                duration: 2,
-                ease: 'expo.out',
-            },
+            stagger:0.15,
         });
-
-        tl.to(this.titleLines,{
-            stagger: 0.2,
-        }).to(this.navLines,{
-            stagger:0.3,
-        },0).to(this.textLine,{
-            scaleX:1,
-            transformOrigin:'left center',
-        },0);
-
-    return tl;
     }
 }

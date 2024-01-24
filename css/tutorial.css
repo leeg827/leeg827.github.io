@@ -10,8 +10,8 @@ html {
   font-size: calc(100vw / 1512 * 10);
 }
 
+
 body {
-  font-family: 'PPNeue';
   font-weight: 400;
   font-size: 1.8rem;
   text-rendering: optimizeLegibility;
@@ -40,7 +40,7 @@ a {
 }
 
 [data-hidden] {
-  opacity: 0;
+  opacity: 1;
 }
 
 [data-animation='text-reveal'] {
@@ -76,6 +76,13 @@ a {
 
 .intro img {
   position: absolute;
+}
+
+.intro__images img {
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  transform-origin: center center;
 }
 
 .intro__images img:nth-child(3),
@@ -132,6 +139,7 @@ a {
 .intro__images img {
   top: 50%;
   left: 50%;
+  transform:translate(-50%,-50%);
   transform-origin: center center;
 }
 
@@ -144,7 +152,6 @@ a {
   z-index: 2;
   overflow: hidden;
   transform: translate(-50%, -50%);
-  opacity: 0;
 }
 
 .intro__center-image img {
