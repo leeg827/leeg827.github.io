@@ -3,7 +3,8 @@ body {
     margin-top:5vh;
     background-size:cover;
     background-position:fixed;
-    font-family:'suisse int\'l';
+    font-family:'Lay Grotesk Trial',sans-serif;
+    font-weight:400;
     margin:0;
     height:auto;
 }
@@ -116,7 +117,7 @@ a {
 }
 
 @font-face {
-    font-family: 'LayGrotesk';
+    font-family: 'Lay Grotesk Trial';
     src: url('laygrotesk-trial-black-webfont.woff2') format('woff2'),
         url('laygrotesk-trial-black-webfont.woff') format('woff');
     font-weight: 900;
@@ -125,7 +126,7 @@ a {
 }
 
 @font-face {
-    font-family: 'LayGrotesk';
+    font-family: 'Lay Grotesk Trial';
     src: url('laygrotesk-trial-black-webfont.woff2') format('woff2'),
         url('laygrotesk-trial-bold-webfont.woff') format('woff');
     font-weight: 700;
@@ -134,7 +135,7 @@ a {
 }
 
 @font-face {
-    font-family: 'LayGrotesk';
+    font-family: 'Lay Grotesk Trial';
     src: url('laygrotesk-trial-medium-webfont.woff2') format('woff2'),
         url('laygrotesk-trial-medium-webfont.woff') format('woff');
     font-weight: 500;
@@ -143,7 +144,7 @@ a {
 }
 
 @font-face {
-    font-family: 'LayGrotesk';
+    font-family: 'Lay Grotesk Trial';
     src: url('laygrotesk-trial-regular-webfont.woff2') format('woff2'),
         url('laygrotesk-trial-regular-webfont.woff') format('woff');
     font-weight: 400;
@@ -152,7 +153,7 @@ a {
 }
 
 @font-face {
-    font-family: 'LayGrotesk';
+    font-family: 'Lay Grotesk Trial';
     src: url('laygrotesk-trial-semibold-webfont.woff2') format('woff2'),
         url('laygrotesk-trial-semibold-webfont.woff') format('woff');
     font-weight: 600;
