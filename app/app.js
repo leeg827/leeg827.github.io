@@ -1,13 +1,8 @@
-import Intro from './animations/intro.js'
+// myCustomCode.js
 
-class App {
-  constructor(){
-    this._createIntro();
-  }
+document.addEventListener("DOMContentLoaded", function() {
+  // Your GSAP code here
+});
 
-  _createIntro(){
-    this.intro = new Intro();
-  }
-}
-
-new App();
+// Additional custom JavaScript code
+console.log("Hello from myCustomCode.js!");
