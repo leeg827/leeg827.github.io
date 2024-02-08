@@ -5,16 +5,14 @@
     </head>
     <body>
         <!--preloader-->
-        <div class="preloader">
+        <div class="preloader" id="preloader">
             <div class="miniText white">gia lee visual design portfolio</div>
-            <div class=" pretext white">Gia Lee &nbsp; <div class="me"></div>&nbsp;is<div>&nbsp;a product designer</div><div>&nbsp;a brand identity creator</div><div>&nbsp;a cat mom</div></div>
+            <div class=" pretext white">Gia Lee &nbsp; <div class="me"></div>&nbsp;is<div id="swap">&nbsp;a product designer</div></div>
         </div>
         <!-- header -->
             <div class="header">
                 <div class="myName">
-                    <div class="myName">
-                           <div class="purple g"><div class="big"><a href="portfolio.html" id="my_text">GIA&nbsp;LEE</a></div></div>
-                    </div>
+                    <a href="portfolio.html"><div class="purple big2" id="my_text">GIA&nbsp;LEE</div></a>
                 </div>
                 <div class="me"></div>
                 <div class="listCaption">
@@ -30,6 +28,14 @@
             </div>
         <!-- projects section -->
             <div class="introTitle">MY WORK &#8600; </div>
+        <!-- featured big projects !!! -->
+        <div class="projectDisplay">
+            <div class="featureProject">
+                <div class="featuredThumbnail"></div>
+                <div class="projectTitle">Concordia App</div>
+                <div>Describe what you did here</div>
+            </div>
+        </div>
         <!-- highlight projects -->
             <div class="projectDisplay">
                 <div class="bigProject">
@@ -44,7 +50,7 @@
                 </div>
             </div>
         <!-- smaller projects -->
-            <div class="projectDisplay">
+            <div class="projectDisplay scrollTrigger">
                 <div class="smallProject">
                     <div class="smallThumbnail"></div>
                     <div class="projectTitle">Porfolio Dae</div>
@@ -68,24 +74,28 @@
             </div>
         <!-- footer -->
         <footer class="footer">
-            <div class="blue blockOne">
-                <div class="secondtitle shadow">always happy to chat </div>
-                <div>Made with lots of love and zero sugar original monster energys 🥤</div>
-                <div></div>
-                <div></div>
-                <div class="copyright">&#169;2024 GIA LEE</div>
-            </div>
-            <div class="blue blockOne">
-                <div class="secondtitle shadow">gialeework@gmail.com</div>
-            </div>
-            <div class="blue blockOne">
-                <div>WORKS </div>
-                <hr>
-                <div>ARCHIVE</div>
-                <hr>
-                <div>RESUME</div>
-                <hr>
-                <div>ABOUT</div>
+            <div class="big shadow white">Get in touch </div>
+            <div class="row">
+                <div class="blue blockOne">
+                    <div class="blockOne">
+                        <div>Made with lots of love and zero sugar original monster energys 🥤</div>
+                        <div></div>
+                        <div></div>
+                        <div class="copyright">&#169;2024 GIA LEE</div>
+                    </div>
+                </div>
+                <div class="blue blockOne">
+                    <div class="secondtitle shadow">gialeework@gmail.com</div>
+                </div>
+                <div class="blue blockOne">
+                    <div>WORKS </div>
+                    <hr>
+                    <div>ARCHIVE</div>
+                    <hr>
+                    <div>RESUME</div>
+                    <hr>
+                    <div>ABOUT</div>
+                </div>
             </div>
             <!-- <div class="footerOptions">
                 <div class="blue blockOne">
@@ -107,6 +117,18 @@
             </div> -->
         </footer>
         <!-- Include GSAP library -->
-    <script type="module" src="/portfolio.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="script/gsap.min.js"></script> -->
+    <!-- gsap plugins -->
+    <!-- flip -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js"></script>
+    <script src="script/Flip.min.js"></script> -->
+    <!-- flip -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script/Flip.min.js"></script> -->
+    <!-- TextPlugin -->
+    <!-- <script src="https://unpkg.com/split-type"></script> -->
+    <!-- actual javascript file -->
+    <!-- <script type="module" src="/portfolio.js"></script> -->
     </body>
 </html>
